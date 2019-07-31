@@ -1,39 +1,734 @@
 {
-  "1": {
-    "objective": "What is the serving rate for each scenario throughout the day, comparing to the overall serving rate? Serving rate is the number of successfully matched trip in a period of time. For example, is the serving rate higher during rush hour or at night?",
-    "submissions": [
-      {
-        "teaser": "task1_ks5063_pya209.png",
-        "description": "The visualization shows the serving rate by the hour of the day. The red vertical line shows the overall average serving rate. We can observe that the serving rate is generally high late at night / early morning, starting from about 1 AM and starts dropping around 7 AM. The lowest serving rates are around the morning and evening rush hours (presumably start and end of a work day).",
-        "authors": "Karan Saini and Pranay Anchan",
-        "urls": ["https://bl.ocks.org/karansaini282/2b37af53597733bbacf1ff52d2301e58"]
-      }
-    ]
-  },
-  "2": {
-    "objective": "For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?",
-    "submissions": [
-      {
-        "teaser": "task2_ks5063_pya209.png",
-        "description": "The visualization shows the number of service refusals for the selected hour of the day, for all the intersections in Manhattan. It has 5 gradients of blue, the darker showing more service refusals. Logically, time-wise this visualization would be inversely proportional to the first visualization (high serving rate = low number of service refusals). For most of the daywe see the refusals spread from Lower Manhattan all the way till Upper East and Upper West sides. From 1 AM to 6 AM, it seems to be concentrated around Chelsea.",
-        "authors": "Karan Saini and Pranay Anchan",
-        "urls": ["https://bl.ocks.org/karansaini282/b18124e3dae603593669e87baadc7ce0",
-                 "https://github.com/karansaini282/data_vis/blob/master/Task_5.ipynb",
-                 "https://bl.ocks.org/karansaini282/19078b17c9a804623dc2994c4c458101"]
-      }
-    ]
-  },
-  "5": {
-    "objective": "What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.",
-    "submissions": [
-      {
-        "teaser": "task5_ks5063_pya209.png",
-        "description": "The first visualization shows a histogram of the total number of trips, aggregated by the number of passengers. We can see most trips have 4 passengers, followed by 3, 2, 1 and 0 passengers.<br/><br/>The second visualization consists of two steps:<ul><li>The first step (done in Python) is a histogram of the average number of passengers per vehicle to identify if any particular vehicles ride with more passengers compared to other vehicles. With this plot we can see that many vehicles have an average number of passengers above 3.</li><li>The second step is a spatio-temporal visualization of the number of passengers for vehicles having a greater average number of passengers (we have chosen 3.5 and above). The spatial unit is intersections in Manhattan; the temporal unit is the hour of the day. From the visualization, we can see that other than early morning hours, these vehicles have many passengers throughout all of Manhattan.</li></ul>",
-        "authors": "Karan Saini and Pranay Anchan",
-        "urls": ["https://bl.ocks.org/karansaini282/b18124e3dae603593669e87baadc7ce0",
-                 "https://github.com/karansaini282/data_vis/blob/master/Task_5.ipynb",
-                 "https://bl.ocks.org/karansaini282/19078b17c9a804623dc2994c4c458101"]
-      }
-    ]
-  }
+	"1": {
+		"objective": "What is the serving rate for each scenario throughout the day, comparing to the overall serving rate? Serving rate is the number of successfully matched trip in a period of time. For example, is the serving rate higher during rush hour or at night?",
+		"submissions": [{
+				"teaser": "task1_ks5063_pya209.png",
+				"description": "The visualization shows the serving rate by the hour of the day. The red vertical line shows the overall average serving rate. We can observe that the serving rate is generally high late at night / early morning, starting from about 1 AM and starts dropping around 7 AM. The lowest serving rates are around the morning and evening rush hours (presumably start and end of a work day).",
+				"authors": "Karan Saini and Pranay Anchan",
+				"urls": ["https://bl.ocks.org/karansaini282/2b37af53597733bbacf1ff52d2301e58"]
+			},
+			{
+				"teaser": "task1_2_jl9760.png",
+				"description": " This visualization can effectively solve the task one and two. On the right side, it is a bar chart that shows the serving rate per hour (Task 1). When users put the mouse over each bar, it shows the exact serving rate of that time. We can discover that the serving rate is particularly high during 2am to 6am and low during rush hours.",
+				"authors": "Jiawen Liang",
+				"urls": ["https://bl.ocks.org/a627142126/raw/7ebae9850e482b2ba88a14742fba9e7e/"]
+			},
+			{
+				"teaser": "task1_rms818_kyn227.png",
+				"description": "Through the interactive chart, it can be seen that the average serving ratio throughout the data is around 55%. Between 12pm and 8pm Serving Ratio is below average as rationally demand > supply and there are not even vehicles to respond to calls.",
+				"authors": "Kloe Ng and Rachel Sim",
+				"urls": ["https://public.tableau.com/profile/rachel2393#!/vizhome/Task1_15645425007630/Sheet4"]
+			},
+			{
+				"teaser": "task1_pmb434.png",
+				"description": "Explore how ride-pooling serve rate changes depending on time and location, and how it relates to the number of requests.",
+				"authors": "Pablo Mandiola",
+				"urls": ["https://pmandiola.com/carto-ridepooling-serve-rate/"]
+			},
+			{
+				"teaser": "task1_xc1454.png",
+				"description": "According to the bar plot 'Served Rate Per Hour' below, we could find that the served rate is higher at night than during rush hour. Besides, the served rate stays lower than 04 from 7pm to 12am and from 9am to 10am. Here I used the total served count divide the total request count as served rate.",
+				"authors": "Xurui Chen",
+				"urls": ["https://sites.google.com/view/data-visualization-sherry/trip-served-analysis", "https://sites.google.com/view/data-visualization-sherry/home"]
+			},
+			{
+				"teaser": "task1_xh1163.png",
+				"description": "This map visualizes the pick-up and drop-off rate of ride-hailing services at each intersection during different hours of the day. Users can switch between pick-up and drop-off scenarios at the top left corner. To see the ‘Hourly Serving Rate’ as well as the changes in spatial patterns and pick-up/drop-off rates throughout the day, users can select different hour(s) in the ‘Hour of Day’ bar chart at the bottom. By comparing with the ‘Overall Serving Rate’, users can also select a specific Hourly Serving Rate range (e.g., 0.3-0.4 which is lower than the overall rate) to see the corresponding hours. The total number of pick-up and drop-off requests of the selected hours are displayed below the overall serving rate.",
+				"authors": "Xiaoning He",
+				"urls": ["https://xiaoninh.carto.com/builder/e996a927-867a-4b19-baaa-2d6dea4057fa/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B40.64417760251725%2C-74.19754028320314%5D%2C%22sw%22%3A%5B40.93115273187039%2C-73.56582641601564%5D%2C%22center%22%3A%5B40.78782018739577%2C-73.88168334960939%5D%2C%22zoom%22%3A11%7D%2C%22widgets%22%3A%7B%226da9bf1b-02e7-4963-8bb1-f66b333e7284%22%3A%7B%22autoStyle%22%3Atrue%2C%22normalized%22%3Atrue%7D%2C%22e439fc67-984c-4a51-8ede-f186917d0349%22%3A%7B%22autoStyle%22%3Atrue%2C%22normalized%22%3Atrue%7D%2C%227eb114dc-356f-4f6f-8875-85f1565f7579%22%3A%7B%22normalized%22%3Atrue%7D%2C%22bca06e1e-dce6-4365-bbbb-4096361ef530%22%3A%7B%22normalized%22%3Atrue%2C%22min%22%3A18.20833333333333%2C%22max%22%3A21.08333333333333%7D%7D%7D"]
+			},
+			{
+				"teaser": "task1_yw1665.png",
+				"description": "A line plot (on the right side of the first visualization) is used to answer the question. The black line shows how the serving rate change over 24 hours, and the black circles connected by the line shows the exact serving rate of each hour. Furthermore, the red line is used to represent the average/overall serving rate of the simulation for reference. So, based on this plot, a person can easily find out the serving rate for each scenario throughout the day, and how does it compare to the overall serving rate.",
+				"authors": "Yuxuan Wang",
+				"urls": ["https://bl.ocks.org/jasonwang1031/raw/c463840e7ac01e782a365c168b2502e2/"]
+			},
+			{
+				"teaser": "task1_cl4855.png",
+				"description": "This visualization is through D3.js. And the serving rate can be observed throughout one day. And it seems that the serving rate is high during late night and it drops when it comes to morning then slightly rises at rush hour in the afternoon but then drops at night.  When you move over your mouse on it you can see how rates are different from each other in terms of different hours.",
+				"authors": "Chang Liu",
+				"urls": ["https://bl.ocks.org/AngelLau/raw/dd226881ab3aa845d382ccf216d541ae/ "]
+			},
+			{
+				"teaser": "task1_ mv1742_ys3226.png",
+				"description": "For the first question, we've worked on the requests dataset. We did the necessary manipulations using Python in Jupyter Notebook. We changed the timestamp to datetime to see it in hourly way. We calculated successful trip ratios aggregating in hourly fashion and plotted the trend for one day period. As you can see, serving rate reaches its peak in the morning rush hours and follows a uniform pattern in other times.",
+				"authors": "Manrique Vargas and Yavuz Sunor",
+				"urls": ["https://github.com/mv1742/Data_VIZ/blob/master/README.md#Q1"]
+			},
+			{
+				"teaser": "task1_ml4922.png",
+				"description": " Scatter plot shows the serving rate for each hour throughout the day, and the rate for each hour relative to the overall serving rate. The red dots represent rush hours and we can find serving rate drops during rush hours. During the day from 8 to midnight, all serving rates for each hour are below the day average except at 17. And after midnight, the serving rate increases and remains at a high level until 6.",
+				"authors": "Minqi Lu",
+				"urls": ["https://bl.ocks.org/louisalulu/raw/8642c61d95073f90d9114608814e7a92/"]
+			},
+
+			{
+				"teaser:": "task1_pl1840_yy2908.png",
+				"description": "The result indicates that the general average serving rate is 45.15%. The hourly serving rate during midnight and early morning (2 am to 6 am) is extremely higher than the average serving; also the hourly serving rates during 8 pm to 11 pm are extremely lower than average.",
+				"authors": "Pengzi Li and Yaxuan Yin",
+				"urls": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
+			},
+			{
+				"teaser": "task1_lj1230.png",
+				"description": "The average serving rate of whole Manhattan is 45.15%. From 2AM to 5AM, average serving rate is pretty high: > 90%; while in the morning rush hour (7AM - 9AM) and the night rush hour (5PM - 7PM), serving rate drops similarly from over 60% to less than 40%. The rate remains a very low level (average 32%) during the night (10PM - 12AM).",
+				"authors": "Junru Lu",
+				"urls": ["https://lujunru.github.io/webpage/DV_Final_lj1230.html"]
+			},
+			{
+				"teaser": "task1_sg5718.png",
+				"description": "This visualization contains a scatter plot, in which each point represents the serving rate in a certain hour, to show how the serving rate changes in one day. I also draw a horizontal line to present the overall serving rate for comparison. For example, it reveals that the serving rate is below the average during morning peak (8:00 and 9:00), evening peak (18:00 – 20:00), and night (21:00 – 23:00). Because of tons of timestamps in one hour, I classify the timestamps into hours from 0 to 23 in a day. The serving rate equals to the number of successfully matched trip over the total number of requested trips in a certain hour. To make the plot clear and users to specifically know the rate, I add a pop-up that will show the hour and serving rate when clicking the point.",
+				"authors": "Shijia Gu",
+				"urls": ["https://bl.ocks.org/sg5718/raw/d0dae452a0f2c8922f611652207c86c5/"]
+			},
+			{
+				"teaser": "task1_var287.png",
+				"description": "Interactive visualization of served pickup requests in Manhattan with filterable barchart that shows the total distribution over time. Intersection Ids are aggregated into a larger geometric shape that capture neighboring points into a single representation of the area in a process called binning. Hexagon bins were chosen as it limits the edge effect and provides a natural circularity which emphasizes geographic continuity of the distribution, where users can observe regional differences in the pickup request over Manhattan. The binning process and the visualization was done using Kepler.gl with a radius of 150 meters. The color ramp for served pickup requests are ordered from dark blue to light green to represent the sequential scaling of the requests.The filter bar is an interactive feature that allows users to control the display of the hexagon on the map depending on the temporal filter. Moreover, the animation tool is a powerful tool in capturing and presenting the spatiotemporal pattern, where the regional difference in pickup requests over Manhattan are presented in accordance to its temporal state.",
+				"authors": "Vivaldi Rinaldi",
+				"urls": ["https://varinaldi.github.io/ManhattanRide/servedRequests.html"]
+			},
+			{
+				"teaser": "task1_hy1528.png",
+				"description": "For Task 1 and Task2, I built a stacked bar chart showing the total request and the served request by hours, a horizontal bar chart showing the serving rate by hours as well as the total serving rate, a map showing the location of miss served request pick up and drop off places. These three charts can be combined together to find the temporal and spatial pattern of miss served requests. Description of how to use the chart has been included in the link. ",
+				"authors": "Haoming Yang",
+				"urls": ["https://cuspcapstone2019.github.io/visual2/"]
+			},
+			{
+				"teaser": "task1_yc3420_jc9033.png",
+				"description": "First of all, served trips and all trips are filtered by a user-defined hourly interval, upon which time-series line chart of serving rate clearly shows the served trips through time in a day. Comparing with the red line that shows the average serving rate, user can clearly find serving pattern. Morning rush hour has a lower serving rate while evening rush hour has a higher serving rate. The late evening has the lowest serving rate while the night has the highest serving rate. In addition, a serving rate map by intersection was drawn to show the spatial distribution that allows users to find what places within what time interval have higher / lower serving rate. All the figures are built with HTML, CSS, Javascript, and D3.",
+				"authors": "Yunhe Cui and Junjie Cai",
+				"urls": ["https://jsbin.com/wukukaf/"]
+			},
+			{
+				"teaser": "task1_cb4184.png",
+				"description": "Together, these visualizations show how serving rate varies in both space and time. I started by processing my data via pandas and plotting in matplotlib. However, I wanted users to visualize how the rate in each zip code compared to the average for Manhattan so I created an interactive map (Task 1) using d3. This visualization allows users to choose a zip code via the drop down options, or to hover over the grey scatter plot to see individual zip code time series To show this geographically, I used Carto(Task 2).The carto map allows users to slide over a timeline to see how the geographic distribution of Serving Rate changes over time.It also shows the value distribution in the top right.",
+				"authors": "Cyrus Blankinship",
+				"urls": ["https://bl.ocks.org/cyrusblankinship/raw/d7d55478adc6b84276e5772fc0fb93c3/", "https://nyu.carto.com/u/uil/builder/0980b0dc-54e5-4057-b4c1-d7a1522309f2/embed"]
+			},
+
+			{
+				"Teaser": "task1_hl3282.png",
+				"Description": "I created line chart with JS Bin. One of two lines is yellow indicating the actual serving rate in every hour of the day. The other one, blue line is the overall serving rate. It is easy to compare actual serving rate in every hour of the day with the overall serving rate from the line chart. And mouse over the black dots connecting the yellow line, the actua serving rate of the hour will appear. During the night like after 1am, the serving rate is higher than the overall serving rate and during the rush hour, serving rate is lower than the overall serving rate. And the trend of serving rate is easy to know from the line chart based on time. When it comes to rush hour, serving rate will be decreasing and comes to non-peak hour, serving rate will be increasing.",
+				"authors": "Hanxing Li",
+				"Urls": ["https://bl.ocks.org/Hancylee525/db2ef92129a825914606c28280d825c3"]
+			},
+
+			{
+				"teaser": "task1_ks5063_pya209.png",
+				"description": "The visualization shows the serving rate by the hour of the day. The red vertical line shows the overall average serving rate. We can observe that the serving rate is generally high late at night / early morning, starting from about 1 AM and starts dropping around 7 AM. The lowest serving rates are around the morning and evening rush hours (presumably start and end of a work day).",
+				"authors": "Karan Saini and Pranay Anchan",
+				"urls": ["https://bl.ocks.org/karansaini282/2b37af53597733bbacf1ff52d2301e58"]
+			},
+			{
+				"teaser": "task1_tc1767.png",
+				"description": "The line chart shows the trend of serving rate of trips in manhattan throughout the day and the dots are presenting the exact serving rate for each hour.The overall serving rate is around 45 % throughout the day.Serving rate is high from 2 am to 7 am and drops below average during morning rush hours.During 10 am and 6 pm, serving rate are approximately just above average with only 5 am reaches 65 % and starting from 6 pm, the serving rate drops to around 32 % during the evening rush hours and stays low until 1 am. Therefore, the serving rate is extremely high after midnight and tends to stay low during rush hours.",
+				"authors": "Tingyu Chang",
+				"urls": ["https://bl.ocks.org/tingyuc3/raw/787a6f4882aa9860a5f475445692d40e/"]
+			}, {
+				"teaser": " task1_gw1054_wz1405.png",
+				"description": "The ‘Service Rate by Hour’ chart shows that the match-up rate stays high during the night time and early morning on this particular day of October 6th, 2013. As time progresses to the morning rush hour, the match-rate drops to 40%, suggesting that most of the requested services weren’t met with an available driver or an available vehicle. The night time beginning from the evening rush hour shows a similar trend as the morning rush hour does. The service rate remains low between 6 pm and 11 pm. There is a particular spike in at 4 pm in the afternoon, suggesting that additional ridesharing drivers hitting the road to meet the demand of evening rush hour. Yet, the supply isn’t enough and the service match up rate during the evening peak hour is quite low, while there is probably extra or sufficient supply during the late-night as most of the requests were met.",
+				"authors": "Guanjia Wang and Wenjie Zheng",
+				"urls": ["https://bl.ocks.org/Williamburgson/26549ac811863dc4bfa5c2d48ea3a675"]
+			},
+			{
+				"teaser": "task1_ku373.png",
+				"description": "The graph shows serving rate (%) by hour. Serving rates are low from 1am to 7am. Note: Serving Rate = Serving time / Total time. Serving time is defined as time period when cars operate with passengers. Assumption: Timestamp is recorded when each event finishes",
+				"authors": "Kenji Uchimoto",
+				"urls": ["http://bl.ocks.org/kenjiu/raw/e7e63f3e1bfd58b14d00e80b69cc123f/"]
+			},
+			{
+				"teaser": "task1_2_ql459.png",
+				"description": "From the bar plot on the left side, the serving rate is pretty high during the morning/peak hours(6am-10am), the highest serving rate is happening at 9 am and the rate is 0.94. During night time, 9 pm is a comparable high serving rate, but the rate is getting lower in the following night hours. Besides, the noontime(12pm-13pm) and the midnight time(12am-4am) has a low serving rate.",
+				"authors": "Qiuyao Liu",
+				"urls": ["https://bl.ocks.org/qiuyliu/81c8a61286d00f51f180b7033f4b8a27"]
+			}
+
+			,
+			{
+				"teaser": "task1_skp454.png",
+				"description": " In the above plot, the red solid line shows the serving rate at different hours of the day, and the blue dashed line shows the average/overall serving rate. From this plot it is clearly observable, from 5AM to 12PM and 3PM to 10PM, the serving rate is higher than the average. These hours of the day corresponds to the Rush/Office hours, and using this plot it can be concluded that the serving rate is high during these times.",
+				"authors": "Shivam Kumar Pathak",
+				"urls": ["https://github.com/Shivam0712/DataVisualization/blob/master/Q1.png"]
+			}
+		]
+	},
+
+	"2": {
+		"objective": "For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?",
+		"submissions": [{
+				"teaser": "task2_ks5063_pya209.png",
+				"description": "The visualization shows the number of service refusals for the selected hour of the day, for all the intersections in Manhattan. It has 5 gradients of blue, the darker showing more service refusals. Logically, time-wise this visualization would be inversely proportional to the first visualization (high serving rate = low number of service refusals). For most of the day we see the refusals spread from Lower Manhattan all the way till Upper East and Upper West sides. From 1 AM to 6 AM, it seems to be concentrated around Chelsea.",
+				"authors": "Karan Saini and Pranay Anchan",
+				"urls": ["https://bl.ocks.org/karansaini282/b18124e3dae603593669e87baadc7ce0",
+					"https://github.com/karansaini282/data_vis/blob/master/Task_5.ipynb",
+					"https://bl.ocks.org/karansaini282/19078b17c9a804623dc2994c4c458101"
+				]
+			},
+
+			{
+				"teaser": "task2_cd2682_mh5172.png",
+				"description": "The map created by Carto shows the distribution of requests not served in time and space. The darker purple represents that there are more failed requests. Besides, by clicking on the interactive widget below, the map could show the failed requests by different times.",
+				"authors": "Chang Du and Mingyi He",
+				"urls": ["https: //chang-du.github.io/Data_Visualization_Final_Challenge/#data_overview"]
+			},
+
+			{
+				"teaser": "task2_cb4221_uak211.png",
+				"description": "This visualization shows the top 150 pickup and dropoff locations where trips could not be served, by number of trips not served. Each location is represented by a circle; the larger the circle, the more times a trip was not served at that location. Purple shows the dropoff locations, yellow shows the pickup locations. Users can select each dot to see the pickup or dropoff ID and number of trips not served. There is significant overlap between the two and most of the locations are located in midtown, between 14th and 57th, and along 6th Avenue.",
+				"authors": "Christine Biddlecombe and Ursula Kaczmarek",
+				"urls": ["https://nyu.carto.com/u/patrol-allocation/builder/e3a38e28-35c8-4aed-9503-fc710491643d/embed"]
+			},
+			{
+				"teaser": "task2_tn1050_ri619.png",
+				"description": "The visualization shows the heat map of all trips not served over the course of the day. This was done primarily to understand if purely spatial relationship existed. Next we wanted to analyze the temporal aspect. First we used a simple time series plot of the percentage of trips not served per hour of the day, and then we created a heat map for each hour of the day to analyze the a further spatial relationship.",
+				"authors": "Tanya Nabila and Rohun Iyer",
+				"urls": ["https://tanyani.github.io/DV_Final/#problem_2"]
+			},
+
+			{
+				"teaser": "task2_ml4922.png",
+				"description": " Bar chart shows the rate those trips can not be served for each hour throughout the day. The map is interactive with bar chart shows the number of trips cannot be served group by zipcode area (using requested pick up location). Number and rate of trips cannot be served between 7 and midnight is very high. Also at different times, area with highest number of trips cannot be served is quite different. This shows a temporal pattern. We can find spatial pattern through map, as different areas have different colors.",
+				"authors": "Minqi Lu",
+				"urls": ["https://bl.ocks.org/louisalulu/raw/8642c61d95073f90d9114608814e7a92/"]
+			},
+
+			{
+				"teaser": "task2_cl4855.png",
+				"description": "This graph is rendered through d3.js by filtering out all the pickup id equals to -1. Since most of the rides happened in lower manhattan so we can see there were more not served trips in those areas. But in the numbers of not served trips increased at upper Manhattan in late night.",
+				"authors": "Chang Liu",
+				"urls": ["http://bl.ocks.org/AngelLau/raw/07d2d55415351e96e963735830dd5b0b/ "]
+			},
+
+			{
+				"teaser": "task2_hl3282.png",
+				"description": " I created map consisting of points in each geometry based on unserved trips data using Carto. The size of points is decided by the number of trips in certain interaction ID area at certain hour. The larger the number of trips are, the larger the points are. Thus, temporal and spatial pattern can be seen in this map. when clicking the certain hour on the distribution in the right, the left point distribution would be changed according to time. From the time distribution in the right, the time after 1, very few unserved trips occur and during the rush hour, most unserved trips occur. And from spatial perspective, most unserved trips occur from 14th St to 57th St, which is expected. Especially at night, most unserved trips happen in downtown.",
+				"authors": "Hanxing Li",
+				"urls": ["https://hancylee525.carto.com/builder/5ec2532e-5c8e-4e74-b438-087af7d2830c/embed"]
+			},
+
+			{
+				"teaser": "task2_rms818_kyn227.JPG",
+				"description": "From the Map (Trips not served, Count) it can be seen that Midtown has the largest number of trips not served. Across the day, the number of trips not fulfilled are highest between 7-10pm.",
+				"authors": "Rachel Sim and Kloe Ng",
+				"urls": ["https://nyu.carto.com/u/kyn227/builder/58f3fd41-a69a-4be4-9a72-3234b40a9a7a/embed"]
+			},
+			{
+				"teaser": "task1_2_jl9760.png",
+				"description": " This visualization can effectively solve the task one and two. On the left side, it is an interactive map that shows the spatial and temporal pattern of not-served trips (Task 2). When users put mouse over each bar on the left, the map shows the spatial pattern of that time, the darker the color is, the more not-served trips that area has. We can discover that start from 9am to 11pm, the mid-town area has the most not-served trips.",
+				"authors": "Jiawen Liang",
+				"urls": ["https://bl.ocks.org/a627142126/raw/7ebae9850e482b2ba88a14742fba9e7e/"]
+			},
+			{
+				"teaser": "task2_sg5718.png",
+				"description": "This visualization contains a bar chart, in which each bar represents the number of unsuccessful trips in a certain hour based on the preprocessed data (actual pickups = -1), and a Manhattan line map. If user click on the bar, there will be a pop-up that shows the specific unsuccessful trips amount and a distribution of those trips shown as points on the right map. For example, in this interaction visualization, regardless of time, we can see most of those trips originated in the south of Central Park North. Another example is that, during the period from 1:00 to 5:00, there is the least number of unsuccessful trips, which are all originated in lower town.However, because of the limitation of GeoJSON provided, I can only draw lines and points by using D3, which is not that clear and beautiful. I also create a time-series bar chart and rolling map in carto. Besides showing distribution of those trips in certain hour in Manhattan by click on the according bar, users can zoom in the map to see the specific road, click a single point, and there will be a pop-up that shows the request ID of the point.",
+				"authors": " Shijia Gu",
+				"urls": ["https://bl.ocks.org/sg5718/raw/363f1a21d316b195a21460af0f33d9f5/",
+					"https://sg5718.carto.com/builder/14004f3b-363d-4f4a-94ae-5fda1da0f016/embed"
+				]
+			},
+
+			{
+				"teaser": "task2_jz3309.png",
+				"description": "I used Mapbox GL, HTML/CSS to visualize the trips that could not be served . I added a slider function to the map, so you can drag it to see the distribution of not served requests every hour and see the temporal change. From the map, you can see that most of the trips not being served concentrated in Garment District, Chelsea District and Upper East Side area from 9 am to 11 am.Between 1 am and 3 am, the trips concentrated in the midtown area. From 7 pm to 12 am (midnight), you can see the requests originated in the Midtown Manhattan and also in Lower Manhattan(mostly in east village) from 10pm .",
+				"authors": "Jingxi Zhao",
+				"urls": ["https://jz3309.github.io/visualization_final/"]
+			},
+			{
+				"teaser": "task2_pmb434.png",
+				"description": "Explore how ride-pooling serve rate changes depending on time and location, and how it relates to the number of requests.",
+				"authors": "Pablo Mandiola",
+				"urls": ["https://pmandiola.com/carto-ridepooling-serve-rate/"]
+			},
+			{
+				"teaser": "task2_hy1528.png",
+				"description": "For Task 1 and Task2, I built a stacked bar chart showing the total request and the served request by hours, a horizontal bar chart showing the serving rate by hours as well as the total serving rate, a map showing the location of miss served request pick up and drop off places. These three charts can be combined together to find the temporal and spatial pattern of miss served requests. Description of how to use the chart has been included in the link. ",
+				"authors": "Haoming Yang",
+				"urls": ["https://cuspcapstone2019.github.io/visual2/"]
+			},
+			{
+				"teaser": "task2_nbc270.png",
+				"description": "In this first visualization, we see a changing heatmap over a 24 hour period for missed pickups. This means each dot seen on the map a single ride where the driver did not end up picking up the intended rider. In order view such a dataset over space and time, it felt appropriate to do a heatmap over a street map of nyc (spatial) along with a time slider (time). The time slider allows one to view a continuous run and look at discrete hours. As seen, there are few missed rides in the early morning hours (2-6). During mid day, there are plenty of missed rides in midtown, particularly around Grand Central, Port Authority, Penn Station, and Times Square. As the slider moves into evening hours the clusters begin to shift south and around 10 PM Oct.5 -1 AM Oct.6th we see more missed pickups in West Village, East Village, Meeat Packing, and NoHo. These are all big going out regions. The slider buttons rendered poorly with iframe but follow in reverse to begining, reverse once, pause, forward once, and fast forward in top to bottom order.",
+				"authors": "Nathan Caplan",
+				"urls": ["https://nbc270.github.io/data_visualization_final/#Challenge_2"]
+			},
+			{
+				"teaser": "task2_xc1454.png",
+				"description": "The animated map shows the spatial distribution of the not served vehicle. At night, most of the not served trips are located in lower Manhattan. However, during rush hour, a lot of the not served trips are located in midtown, around the central park. Besides, the count of not served trips at night is much lower than the rush hours.",
+				"authors": "Xurui Chen",
+				"urls": ["https://sites.google.com/view/data-visualization-sherry/trip-served-analysis", "https://sites.google.com/view/data-visualization-sherry/home"]
+			},
+			{
+				"teaser": "task2_yw1665.png",
+				"description": "An interactive map (on the left side of the first visualization) is used to answer the question. By clicking one of the 24 buttons on the left (each button representing one hour), points will show up on the map to show the spatial distribution of unserved request of each according hour: each point represents a road intersection and the color of the point represents the number of unserved trip requested. A color scale is provided for reference. So based on the map, people can find out the spatial and temporal pattern of trips that cannot be served.Buy clicking each button, and reviewing the distribution and color of the points, people are able to gain information to answer the example question: are most of those trips originated in particular regions, and of certain times?",
+				"authors": "Yuxuan Wang",
+				"urls": ["https://bl.ocks.org/jasonwang1031/raw/c463840e7ac01e782a365c168b2502e2/"]
+			},
+			{
+				"teaser": "task2_gw1054_wz1405.png",
+				"description": "The ‘Failed Requests by Hour’ bar chart in the bottom left of the page shows a complementary chart to the service rate. Due to the sheer volume of the dataset, 10% of the dataset was sampled to better visualize where most failed requests happen. By clicking one of those bars in the bar chart, users are able to visualize the spatial distribution of the failed requests through the map on the right which every single red point representing the location of a failed request. Due to the nature of the express ride-sharing program, one red point may suggest multiple failed requests. The amount of failed request increases during the morning rush hour and stays high during the evening. Most of the failed requests take place in Midtown, Upper East Side, and Upper West Side, while Downtown Manhattan and Uptown Manhattan toward Harlem do not have as many failed requests.",
+				"authors": "Guanjia Wang and Wenjie Zheng ",
+				"urls": ["https://bl.ocks.org/Williamburgson/26549ac811863dc4bfa5c2d48ea3a675"]
+			},
+			{
+				"teaser": "task2_ mv1742_ys3226.png",
+				"description": "For the second question, we also used the requests dataset but this time we merged it with manhattan.geojson to visualize on a map. We created a served/not_served column in Jupyter notebook for categorizing trips. We then browsed the merged dataframe to CartoDB as a csv file. We wrote a simple SQL query to filter not_served trips and aggregating trips by each geolocation. As you can see, most of not_served trips concentrated near Eastern Manhattan mostly in Midtown and Central Park area. In terms of temporality, we see early hours in WTC area and late hours near Midtown/Central Park area.",
+				"authors": "Manrique Vargas and Yavuz Sunor",
+				"urls": ["https://github.com/mv1742/Data_VIZ/blob/master/README.md#Q2",
+					"https://sunoryavuz.carto.com/builder/7ee4c4c1-7575-48eb-a9c5-50950fb9c0c2/embed"
+				]
+			},
+			{
+				"teaser": "task1_2_ql459.png",
+				"description": " The spatial map is showing the un - matched requested rides per hours.During the morning time, the lower west and east side have a high amount of un - matched rides, this could be explained by the traffic jam during rush hour in downtown.The midtown, especially 5 th ave, is experiencing a high amount of un - matched ride requests from noon to the night.Particularly, the time square is happening all - day high un - matched ride requests.",
+				"authors": "Qiuyao Liu",
+				"urls": ["https://bl.ocks.org/qiuyliu/81c8a61286d00f51f180b7033f4b8a27"]
+			},
+
+			{
+				"teaser": "task2_lj1230.png",
+				"description": "The whole picture shows that generally unmatched trips concentrated under 125 street. The more we move south, the denser the unmatched trips. In the late night (1AM - 5AM), unmatched trips concentrated in the lower Manhattan; while in the rush hour (7AM - 9AM & 5PM - 7PM), unmatched trips spread to all over the Manhattan... I do recommend directly go to my page (the second link) for better understanding of my map.",
+				"authors": "Junru Lu",
+				"urls": ["https://nyu.carto.com/u/junru/builder/59646e9a-f237-4fdd-a8cd-411242fcff41/embed", "https://lujunru.github.io/webpage/DV_Final_lj1230.html"]
+			},
+			{
+				"teaser": "task2_ku373.png",
+				"description": "The graph shows counts of unserving vehicles by hour. The map on the right will pop up when you mouseover on the left graph. The graphs imply that there are many unserving cars in Midtown(Daytime) and Upper East/West(Midnight). That might mean other areas have higher matching rates and need more available cars from those areas.",
+				"authors": "Kenji Uchimoto",
+				"urls": ["http://bl.ocks.org/kenjiu/raw/e7e63f3e1bfd58b14d00e80b69cc123f/"]
+			},
+			{
+				"teaser": "task2_pl1840_yy2908.png",
+				"description": "The result we got suggests that no-serving rates are relatively higher at night (from 7 pm to 12 am), and relatively lower during midnight and early morning (2 am to 6 am). The pattern is opposite to the hourly trend of serving rate. In spatial analysis, Both serving and no-serving trips are first normalized to (0,1) scale, then no-serving trips are subtracted from serving trips. Therefore, the real pattern of no-serving trips across Manhattan indicates that most of the no-serving trips occur in midtown.",
+				"authors:": "Pengzi Li and Yaxuan Yin",
+				"urls": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
+			},
+			{
+				"teaser": "task2_var287.png",
+				"description": "Interactive visualization of unserved pickup requests in Manhattan with filterable barchart that shows the total distribution over time. IntersectionIds are aggregated into a larger geometric shape that capture neighboring points into a single representation of the area in a process called binning. Hexagon bins were chosen as it limits the edge effect and provides a natural circularity which emphasizes geographic continuity of the distribution, where users can observe regional differences in the pickup request over Manhattan. The binning process and the visualization was done using Kepler.gl with a radius of 150 meters. The color ramp for unserved pickup requests are ordered from light orange to dark purple. This was done intentionally to show regions with high unserved request as dark and implies to the users that the chance of getting an unserved request higher in those areas. The filter bar is an interactive feature that allows users to control the display of the hexagon on the map depending on the temporal filter. Moreover, the animation tool is a powerful tool in capturing and presenting the spatiotemporal pattern, where the regional difference in pickup requests over Manhattan are presented in accordance to its temporal state.",
+				"authors": "Vivaldi Rinaldi",
+				"urls": ["https://varinaldi.github.io/ManhattanRide/unservedRequests.html"]
+			},
+
+			{
+				"teaser": "task2_jz3525_ss12513.png",
+				"description": "The visualization shows the rides that were not served by hour of the day. The points on the map show the pickup location of each trip. We can find that before 6 AM, the number of service refusal is significantly high in west side of area between Downtown Manhattan and Midtown Manhattan. Ever since 7 AM, there is an area that keeps a high number of service refusal throughout the whole day, which is located below the Midtown Manhattan and near Madison Square.",
+				"authors": "Jingtian Zhou and Saloni Saini",
+				"urls": ["https://bl.ocks.org/SaloniSaini02/raw/4329778114a3156a41b30997c2b15d6a/"]
+			},
+
+			{
+				"teaser": "task2_yc3420_jc9033.png",
+				"description": "Not served trips are filtered by a user-defined hourly interval. And then time-series lines of served & not served trip rate clearly shows the number of trips that cannot be served through time in a day. Morning rush hour has more not - served trips while evening rush hour has less not - served trips.The late evening has the most not - served trips while the night has the least not - served trips.Obviously, this pattern is exactly contrary to that of serving rate.In other words, the more not - served trips, the higher serving rate.This is because there is a large absolute amount of trips. In addition, a not - served trips map by intersection was drawn to show the spatial distribution that allows users to find what places within what time interval have more / less not - served trips. All the figures are built with HTML, CSS, Javascript, and D3.",
+				"authors": "Yunhe Cui and Junjie Cai",
+				"Urls": ["https://jsbin.com/yuvezox/"]
+
+			},
+
+			{
+				"teaser": "task2_hh2264.png",
+				"description": "I used vehicle_events.csv file for Task 2 because it gives the number of passengers involved at each stop, requested stop intersection ID, timestamp, etc. I also added community districts polygons data for Manhattan to better visualize trips-not-served data by districts. Due to personal account data storage limit on Carto.com, I selected 3 timestamps of hours of the trips-not-served data from all data: 9 am (morning rush hour), 5 pm (evening rush hour), and 12 am (late night non rush hour). The above screenshot of the Carto map is at 9 am (also specified in the legend top left). The numbers for each district with a color scale indicate the aggregated numbers of the trips not served at 9 am. Lower east and Harlem (upmost district) have highest number of trips not served. Most of midtown and uptown trips were served at morning rush hours. This is probably because of the huge demand of car pool to work at this time of midtown. Notice that the number range is from 91 to 1.4 k with an 896 average, which is big. There are 3 maps and screenshots for this task since I did it at 9 am, 5 pm, and 12 am. Descriptions, links, and pictures for the other two are in the Word doc I submitted through NYUClasses",
+				"authors": "Haopeng Huang",
+				"urls": ["https://haopeng-huang.carto.com/builder/e7198f67-0327-49bd-805f-4fa8f53a041a/embed"]
+			},
+
+
+			{
+				"teaser": "task2_xh1163.png",
+				"description": " This map visualizes the pick-up and drop-off rate of ride-hailing services at each intersection during different hours of the day. Users can switch between pick-up and drop-off scenarios at the top left corner. The pick-up intersections are colored by the pick-up rate – served pick-up over the total number of pick-up requests at that intersection, and the drop-off rate, respectively colors the drop-off intersections. The Users can filter the pick-up intersections by 'Pickup Rate' and the drop-off intersections by 'Drop - off Rate' to look at the corresponding spatial pattern of a specific rate range. To look at the spacial pattern of those trips that could not be served, for example, users can select the pick-up rates from 0 to 0.9 (exclude 1), which will display all the not-served pick-up intersections; selecting 0 drop-off rate will show the drop-off intersections that have NEVER served any requests. The size of circles represents the total number of requests at each intersection. When hovering over an intersection, it will also show the exact numbers of total, severed, and not-served requests at that intersection.",
+				"authors": "Xiaoning He",
+				"urls": ["https://xiaoninh.carto.com/builder/e996a927-867a-4b19-baaa-2d6dea4057fa/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B40.64417760251725%2C-74.19754028320314%5D%2C%22sw%22%3A%5B40.93115273187039%2C-73.56582641601564%5D%2C%22center%22%3A%5B40.78782018739577%2C-73.88168334960939%5D%2C%22zoom%22%3A11%7D%2C%22widgets%22%3A%7B%226da9bf1b-02e7-4963-8bb1-f66b333e7284%22%3A%7B%22autoStyle%22%3Atrue%2C%22normalized%22%3Atrue%7D%2C%22e439fc67-984c-4a51-8ede-f186917d0349%22%3A%7B%22autoStyle%22%3Atrue%2C%22normalized%22%3Atrue%7D%2C%227eb114dc-356f-4f6f-8875-85f1565f7579%22%3A%7B%22normalized%22%3Atrue%7D%2C%22bca06e1e-dce6-4365-bbbb-4096361ef530%22%3A%7B%22normalized%22%3Atrue%2C%22min%22%3A18.20833333333333%2C%22max%22%3A21.08333333333333%7D%7D%7D"]
+			},
+
+			{
+				"teaser": "task2_skp454.gif",
+				"description": "The above heatmap shows the spatial distribution of non-served trip requests across different hours of the day. From the map, it can be clearly observed that the epicentres of the unfilled requests shifts throughout the day. During the morning hours, the number of unfulfilled request is high in lower Manhattan, during the day and evening time it shifts to midtown, and again during the night it shifts back to lower Manhattan. The map is helpful in understanding the spatio-temporal distribution of the unserved requests.",
+				"authors": "Shivam Kumar Pathak",
+				"urls": ["https://github.com/Shivam0712/DataVisualization/blob/master/Q2.gif "]
+			},
+			{
+				"teaser": "task2_cb4184.png",
+				"description": "Together, these visualizations show how serving rate varies in both space and time. I started by processing my data via pandas and plotting in matplotlib. However, I wanted users to visualize how the rate in each zip code compared to the average for Manhattan so I created an interactive map (Task 1) using d3. This visualization allows users to choose a zip code via the drop down options, or to hover over the grey scatter plot to see individual zip code time series. To show this geographically, I used Carto(Task 2).The carto map allows users to slide over a timeline to see how the geographic distribution of Serving Rate changes over time.It also shows the value distribution in the top right.",
+				"authors": "Cyrus Blankinship",
+				"urls": ["https://bl.ocks.org/cyrusblankinship/raw/d7d55478adc6b84276e5772fc0fb93c3/", "https://nyu.carto.com/u/uil/builder/0980b0dc-54e5-4057-b4c1-d7a1522309f2/embed"]
+			}
+		]
+	},
+	"3": {
+		"objective": "For the entire simulation, we limit vehicle speed to under 25mph. Could you see any vehicle travel exceeded those limits? If so, could you show us where (and potentially how) that happen?",
+		"submissions": [{
+				"teaser": "task3_rms818_kyn227.png",
+				"description": "Number of Vehicles travelling about 25mph is the lowest between 5-6am.",
+				"authors": "Kloe Ng and Rachel Sim",
+				"urls": ["https://mit.carto.com/u/angyuqian/builder/f008c473-ac1d-40ef-850b-24ffc1350199/embed"]
+			},
+			{
+				"teaser": "task3_xc1454.png",
+				"description": "The 'Overspeed Vehicle Distributin' layer shows the overall distribution of Overspeed vehicle. The 'Overspeed Vehicle Per Hour' layer shows the hourly changes of Overspeed vehicle. From the static distribution, we could see that most of the Overspeed happened in lower Manhattan. And the speed in Houston St, Broadway, 7th Ave, and Lenox Ave is higher than other streets. From the animated map, we could see that even the distribution of Overspeed vehicle changes over time, there some high-possibility Overspeed locations. The intersection of Boway and Houston St, the intersection of 6th Ave and Houston St, the intersection of worth St and Chatham St, the intersection of 37th St and 2nd Ave, the intersection of 66th St and 2nd Ave, the midpoint of 2nd Ave between 59th St and 60th St, the intersection of 3rd Ave and 66th St, the intersection of 110th St and Lenox Ave and the intersection of Columbus Cir and Broadway. From the discovery above, we could see that a lot of Overspeed events have happened at the intersection of the main road (the yellow road) in Manhattan.",
+				"authors": "Xurui Chen",
+				"urls": ["https://sites.google.com/view/data-visualization-sherry/overspeed-vehicle-detection", "https://sites.google.com/view/data-visualization-sherry/home"]
+			},
+			{
+				"teaser": "task3_hy1528.png",
+				"description": "For Task 3,4,8, I built animations of routes, speed and passengers to visualize the activities of a specific vehicle. It can also allow us to see what are the places  and time of overspeed and overload happen of each vehicle. Description of how to use the chart has been included in the link. ",
+				"authors": "Haoming Yang",
+				"urls": ["https://cuspcapstone2019.github.io/visual2/"]
+			},
+			{
+				"teaser": "task3_cd2682_mh5172.png",
+				"description": "Calculated the velocity of each vehicle between each pair of timestamp and filtered the records which speed exceed 25mph. Map the result and applied a time slide to select the speeding vehicles in a certain window.",
+				"authors": "Chang Du and Mingyi He",
+				"urls": ["https://chang-du.github.io/Data_Visualization_Final_Challenge/#portfolio"]
+			},
+			{
+				"teaser": "task3_lj1230.png",
+				"description": "This map is made by extracting all running statuses of each vehicle, sorting by time, calculating the time gap and distance between two records and selecting those gaps with over-limit speeds. In general, almost all speeding... I do recommend directly go to my page (the second link) for better understanding of my map.",
+				"authors": "Junru Lu",
+				"urls": ["https://nyu.carto.com/u/junru/builder/f54b43fe-df1d-4908-8c3f-fa1c9c0e20a8/embed", "https://lujunru.github.io/webpage/DV_Final_lj1230.html"]
+			},
+
+			{
+				"teaser": "task3_yc3420_jc9033.png",
+				"description": "First we calculate speed for all vehicle path records. In this challenge, We converted latlong to miles and calculated Manhattan distance as vehicle should follow roads rather than go with straight lines from point to point. Instead of assign value to road (line features), we assigned speed to the starting point of each record.  For all trip records, we can see that most speeds are within 15 - 35 mph range(almost 99 % ).However, as we group our data by vehicle ID, we could see that in the study time range, there was no vehicle overspeeding. In terms of spatial distribution of overspeed behavior, we could see in the map that: downtown(near Brooklyn Bridge and Manhattan Bridge), Broadway(midtown / uptown / harlem), Park Avenue, Adam Clayton Powell Jr.Ave and MalColm X Blvd.",
+				"authors": "Yunhe Cui and Junjie Cai",
+				"urls": ["https://jsbin.com/jacoyab/1/edit?html,js,output", "https://yunhecui.carto.com/builder/af1a0e80-9a42-4091-a764-4c0daf54fc99/embed"]
+			}
+
+		]
+	},
+	"4": {
+		"objective": "We also limit vehicle capacity to at most 4 passengers. Were there vehicles violating this condition? If so, can you show any pattern about these vehicles? For example, how many of them were violating, and where were they distributed in both time and space?",
+		"submissions": [{
+				"teaser": "task4_rms818_kyn227.PNG",
+				"description": "There is a large number of erroneous data. Vehicles that have 5 or 6 passengers only occur between 5am and 12pm.",
+				"authors": "Kloe Ng and Rachel Sim",
+				"urls": ["https://nyu.carto.com/u/rms818/builder/cefe1e4e-e158-4d59-9b8d-3ada534b4fec/embed"]
+			},
+			{
+
+				"submissions": [{
+						"teaser": "task4_cb4221_uak211.png",
+						"description": "This visualization examines the top 1000 locations by requested pickup and dropoff where cars are violating the four passenger rule. Each dot represents a pickup and dropoff location. The color represents the amount of cars that violated the limit at that location; the darker the color, the higher amount of cars violating the limit. Users can select each dot to see the latitude, longitude, and number of cars. Users can also use the toggle on the upper right to look at specific bins of cars; for example, if users select the highest count bin, they can visualize the locations that were the 'worst offenders' of the four passenger limit.",
+						"authors": "Christine Biddlecombe and Ursula Kaczmarek",
+						"urls": ["https://nyu.carto.com/u/patrol-allocation/builder/da9e310e-d933-4d2e-bda6-0ce849819200/embed"]
+					},
+					{
+						"teaser": "task4_hy1528.png",
+						"description": "For Task 3,4,8, I built animations of routes, speed and passengers to visualize the activities of a specific vehicle. It can also allow us to see what are the places  and time of overspeed and overload happen of each vehicle. Description of how to use the chart has been included in the link. ",
+						"authors": "Haoming Yang",
+						"urls": ["https://cuspcapstone2019.github.io/visual2/"]
+					},
+
+					{
+						"teaser": "task4_xc1454.png",
+						"description": "The animated map shows the hourly spatial distribution of the violating vehicle. The bar plot shows the distribution of vehicle capacity in the selected map area. Most of the violating vehicles are located at Manhattan downtown. And 5, 18, 23, 27 and 17 are the most popular violating capacity.",
+						"authors": "Xurui Chen",
+						"urls": ["https://sites.google.com/view/data-visualization-sherry/violating-vehicle-capacity", "https://sites.google.com/view/data-visualization-sherry/home"]
+					},
+					{
+						"teaser": "task4_cl4855.png",
+						"description": "This graph is rendered by d3.js by filtering out the number of passengers which is over Most of the violations happened in lower Manhattan. And same trend of rising in upper Manhattan in the late night. ",
+						"authors": "Chang Liu",
+						"urls": ["http://bl.ocks.org/AngelLau/raw/07d2d55415351e96e963735830dd5b0b/ "]
+					},
+
+
+					{
+						"teaser": "task4_cd2682_mh5172.png",
+						"description": "We solve these two tasks in one map created by JavaScript. The map and bar plot in the first line represent the vehicles with normal number of passengers, those in second-line show the overload vehicles. The two maps show the pattern of the distribution of normal and overload vehicles separately. The two histograms show the distribution of number of vehicles by passenger number. The line plot on the bottom shows the mean of number of passengers for erroneous trips for each vehicle and the count of erroneous trips by each vehicle.",
+						"authors": "Chang Du and Mingyi He",
+						"urls": ["https://chang-du.github.io/Data_Visualization_Final_Challenge/#about"]
+					},
+					{
+						"teaser": "task4_yw1665.png",
+						"description": "An interactive map and line plot is used to answer the question. The line plot shows how the number of vehicles that violating the capacity limit change our 24 hours, and each point (the vertical position of the points) shows the number of vehicles that violating the capacity limit of each hour. By clicking one of the 24 buttons on the left(each button representing one hour), points will show up on the map to show the spatial distribution of number of vehicles carrying more than 4 people in each hour: each point represents a road intersection and the color of the point represents the number of vehicles carrying more than 4 people, which initially starts the trip at the intersection.A color scale is provided for reference. So based on this visualization, we can understand the temporal and spatial distribution of vehicles violating the limit.The line plot can show us the overall number of vehicles that violating the limit of each hour, and the map can show the spatial pattern of these vehicles of at each hour. So the question, how many of them were violating, and where were they distributed in both time and space, can be answered.",
+						"authors": "Yuxuan Wang",
+						"urls": ["https://bl.ocks.org/jasonwang1031/raw/b6870d0093e0d548a5a93fb2f3153546/"]
+					},
+					{
+						"teaser": "task4_tn1050_ri619.png",
+						"description": "To illustrates that there indeed were vehicles violating the condition, our visualization shows the distribution of every vehicle's average number of passengers in a boxplot as well as showing the distribution in a time series format through a line plot. To show spatial distributions of these violations, we also made a heat map that changes per hour to show their temporal movement.",
+						"authors": "Tanya Nabila and Rohun Iyer",
+						"urls": ["https://tanyani.github.io/DV_Final/#problem_4"]
+					},
+					{
+						"teaser": "task4_lj1230.png",
+						"description": "As we moving the time bar, we'll see some amazing conclusions. Starting with only 8% in Oct 5th 1AM, the rate keeps growing all day from around 85% in the morning rush hour then to even 100% over the night (7PM - 12AM)... I do recommend directly go to my page (the second link) for better understanding of my map.",
+						"authors": "Junru Lu",
+						"urls": ["https://nyu.carto.com/u/junru/builder/0176f1d2-c7b7-4a71-982c-b36427c61f4e/embed", "https://lujunru.github.io/webpage/DV_Final_lj1230.html"]
+					}
+
+				]
+			},
+
+			{
+				"teaser": "task4_pl1840_yy2908.png",
+				"description": "The result shows that all vehicles in the dataset violated the vehicle capacity at least once. Only a small portion of vehicles from 1 am to 7 am followed the rules. For spatial analysis, most transgressing vehicles are around central park, midtown, and downtown area, meanwhile, part of the transgressing vehicles appeared in the West Harlem area from 3 am to 6 am.",
+				"authors": "Pengzi Li, Yaxuan Yin",
+				"url": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
+			},
+
+			{
+				"teaser": "task4_hh2264.png",
+				"description": "This map above is the number of violations of the 4-passenger rule at each intersection ID in Manhattan throughout the time in the vehicle_paths_pnas.csv file (with error). I did not aggregate by districts for this task. We can see red values are allover Manhattan. Particularly, high numbers of violation occur in downtown west, midtown, and uptown east. Harlem districts in the upmost have less number of violation and so does Roosevelt Island. The numbers of violation spread from 1 to 214 with a 36.1 average at each intersection ID. According to exploratory analysis in Python notebooks, out of 500 unique vehicle IDs, 274 of them violated at least 1 time of the 4-passenger rule. This is over a half of the total cars. And the total number of violations in this simulation data is 2,405,275, for every timestamp, every vehicle ID, and every intersection ID.",
+				"authors": "Haopeng Huang",
+				"urls": ["https://haopeng-huang.carto.com/builder/00437259-5186-46ef-b478-7fe6c71814f5/embed"]
+			},
+			{
+				"teaser": "task4_nbc270.png",
+				"description": "In this second visualization, we have an interactive bar plot detailing number of violation rides given during a 24 hour period per each hour. As seen above, there are few violators during the early hours of Saturday. However, by 7 AM they begin an increase that doesn't peak until 1 PM, where is slightly decreases as the day goes on. What is incredibly noticeable is the dramatic change between 1 AM on Saturday and 12 AM on Sunday. Though, both being 'going out' hours, there's a stark difference between early Saturday and Sunday hours. This figure only shows aspects regarding time.",
+				"authors": "Nathan Caplan",
+				"urls": ["https://nbc270.github.io/data_visualization_final/#Challenge_4"]
+			}
+		]
+	},
+
+	"5": {
+		"objective": "What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.",
+		"submissions": [{
+				"teaser": "task5_ks5063_pya209.png",
+				"description": "The first visualization shows a histogram of the total number of trips, aggregated by the number of passengers. We can see most trips have 4 passengers, followed by 3, 2, 1 and 0 passengers.<br/><br/>The second visualization consists of two steps:<ul><li>The first step (done in Python) is a histogram of the average number of passengers per vehicle to identify if any particular vehicles ride with more passengers compared to other vehicles. With this plot we can see that many vehicles have an average number of passengers above 3.</li><li>The second step is a spatio-temporal visualization of the number of passengers for vehicles having a greater average number of passengers (we have chosen 3.5 and above). The spatial unit is intersections in Manhattan; the temporal unit is the hour of the day. From the visualization, we can see that other than early morning hours, these vehicles have many passengers throughout all of Manhattan.</li></ul>",
+				"authors": "Karan Saini and Pranay Anchan",
+				"urls": ["https://bl.ocks.org/karansaini282/b18124e3dae603593669e87baadc7ce0",
+					"https://github.com/karansaini282/data_vis/blob/master/Task_5.ipynb",
+					"https://bl.ocks.org/karansaini282/19078b17c9a804623dc2994c4c458101"
+				]
+			},
+			{
+				"teaser": "task5_rms818_kyn227.PNG",
+				"description": "10am records the lowest amount of 3 or more passengers spatially.",
+				"authors": "Kloe Ng and Rachel Sim",
+				"urls": ["https://public.tableau.com/profile/rachel2393#!/vizhome/Task5Complete/Dashboard1"]
+			},
+			{
+				"teaser": "task5_cl4855.png",
+				"description": "This is the heatmap changed automatically by hours. Which was rendered in folium package. And we can see the utilization is actually quite high throughout Manhattan. ",
+				"authors": "Chang Liu",
+				"urls": ["https://sites.google.com/view/numofpassengers/ "]
+			},
+
+			{
+				"teaser": "task5_yc3420_jc9033.png",
+				"description": "First we did a general analysis on utilization. We counted # of passengers for each vehicle path record. The bar chart shows that most vehicles have 3 or 4 passengers on a trip. The average number of all vehicle path record is 3.24. We also calculated total passenger number and total trip number for each vehicle and we got two similar bimodal distributions.We also selected those vehicle path from the original csv file based on their average passenger ride ( > 1σ ).  This map shows the spatial and temporal distribution of ‘ride more passenger’ vehicles.  The time change at the bottom of the map shows location change with time change. ",
+				"authors": "Yunhe Cui and Junjie Cai",
+				"urls": ["https://jsbin.com/kevazey/21/edit?html,css,js,output", "https://public.tableau.com/views/dv_final_Q5/Sheet1?:embed=y&:display_count=yes&:origin=viz_share_link", "https://yunhecui.carto.com/builder/6535c812-f742-4171-8a94-47246bea67a8/embed"]
+
+			},
+			{
+				"teaser": "task5_ku373.png",
+				"description": "The first graph shows total trip duration(second) by # of passengers. Most of time, vehicles run with 4 passengers. The second graph shows total trip duration of the vehicle ID 406, which has the longest trip duration with 4 passengers. Compared with average, the ID 406 has shorter empty time than average.",
+				"authors": "Kenji Uchimoto",
+				"urls": ["http://bl.ocks.org/kenjiu/raw/e7e63f3e1bfd58b14d00e80b69cc123f/"]
+			},
+			{
+				"teaser": "task5_cd2682_mh5172.png",
+				"description": "We solve these two tasks in one map created by JavaScript. The map and bar plot in the first line represent the vehicles with normal number of passengers, those in second-line show the overload vehicles. The two maps show the pattern of the distribution of normal and overload vehicles separately. The two histograms show the distribution of number of vehicles by passenger number. The line plot on the bottom shows the mean of number of passengers for erroneous trips for each vehicle and the count of erroneous trips by each vehicle.",
+				"authors": "Chang Du and Mingyi He",
+				"urls": ["https://chang-du.github.io/Data_Visualization_Final_Challenge/#about"]
+			},
+			{
+				"teaser": "task5_jz3525_ss12513.png",
+				"description": "The first visualization shows the vehicle utilization as a bar chart. From the plot, we could find the majority of the trips have more than 3 passengers on the vehicle, which shows the vehicle utilization is excellent. The second visualization shows the locations of the vehicles that have more than 3.5 passengers on average  by hour of the day. We could find during most of the times in a day, especially after 7 AM, the area below Harlem and East Harlem have a significant higher number of vehicle use and vehicle utilization.",
+				"authors": "Jingtian Zhou and Saloni Saini",
+				"urls": ["https://bl.ocks.org/SaloniSaini02/3aef43eafef3d06e7a0ebadf531bd290", "https://bl.ocks.org/SaloniSaini02/raw/44af6d04d8a6ef7b8bab7d45728c2379/"]
+			},
+			{
+				"teaser": "task5_lj1230.png",
+				"description": "The average utilization of ride-hailing vehicles in NYC is 2.10 passengers per trip, or 52.5% in percent (2.13 / 4). And we can see that vehicles running in lower manhattan, both side of central park and above 125 Street are more likely to... I do recommend directly go to my page (the second link) for better understanding of my map.",
+				"authors": "Junru Lu",
+				"urls": ["https://nyu.carto.com/u/junru/builder/e11c12af-b3bd-4fb7-abab-e3aa527a1b68/embed", "https://lujunru.github.io/webpage/DV_Final_lj1230.html"]
+			},
+
+			{
+				"Teaser": "task5_skp454.gif",
+				"description": " The above plot shows the stacked bar chart for percentage vehicle time it is occupied by different number of passengers.The plot contains bars for all the vehicles present in the dataset and is arranged to present information neatly.The blue line shows the mean of % time vehicles are occupied with 4 passenger.The plot clearly reflects that the distribution of high number of passengers(4) is homogenous across vehicles.For most of the vehicles the % time occupied by 4 passengers is close to the mean, overall there is a very small standard deviation.However, there are certain vehicles which are mostly occupied by less number of passengers.To better understand the spatial temporal distribution of these cabs we plot the next map which is shown below.The above map shows the positions of vehicles at different time of the day, and the color reflects the number of passengers they are carrying.It can be clearly observed from the map that in certain hours of the day i.e., from 12 AM to 4 AM, the number of cabs carrying high number of passengers is low across all regions.In certain regions like upper Manhattan, most of the vehicles have low passengers throughout the day.We can clearly observe that most of the vehicles in lower and midtown Manhattan have high number of passengers.Also vehicles with high number of passengers peak during the rush hours.",
+				"authors": "Shivam Kumar Pathak",
+				"url": ["https://github.com/Shivam0712/DataVisualization/blob/master/Q51.png", "https://github.com/Shivam0712/DataVisualization/blob/master/Q5.gif"]
+			},
+
+			{
+				"teaser": "task5_pl1840_yy2908.png",
+				"description": "After digging into the data, analysis proves that most of the vehicles are riding with 3 passengers. Also, 323 vehicles tend to ride with more passengers (most of their trips have 4 passengers in the car),  they are active at most times of the day, which is consistent with violated vehicles on spatial distribution. ",
+				"authors": "Pengzi Li, Yaxuan Yin",
+				"url": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
+			},
+
+			{
+				"teaser": "task5_tn1050_ri619.png",
+				"description": "The visualizations illustrated the distributions of the number of passengers per pickup/dropoff event, one in a barplot format to show that vehicles have 3-4 passengers most of the time, and the boxplot shows the distribution of these values. We separated the low average number of passengers to compare with the normal average number of passengers to compare how they behave in a heat map that also changes per hour.",
+				"authors": "Tanya Nabila and Rohun Iyer",
+				"urls": ["https://tanyani.github.io/DV_Final/#problem_5"]
+			},
+
+			{
+				"teaser": "task5_ mv1742_ys3226.png",
+				"description": "For the fifth question, we used vehicle_paths dataset. Using Jupyter Notebook, we filtered the data for the number of passengers below and equal 4 and created a geometry column out of Latitude and Longitudes. Then we browsed the dataframe to CartoDB as in the question 2. We applied a very similar SQL query and were able to visualize vehicles in terms of passenger numbers and time of the day. Because the maximum time limited up to 2pm for number of passengers below 4, we can only see a temporal pattern between 5am and 2pm. As you can see, both in terms of passenger numbers and time of the day, the city shows a uniform distribution.",
+				"authors": "Manrique Vargas and Yavuz Sunor",
+				"urls": ["https://github.com/mv1742/Data_VIZ/blob/master/README.md#Q5",
+					"https://sunoryavuz.carto.com/builder/03ddfd80-20ca-43b5-bf58-2a5a07474c73/embed"
+				]
+			},
+
+			{
+				"teaser": "task5_hh2264.png",
+				"description": "This map is made out of the clean version in which the number of passengers in the vehicle at each timestamp makes more sense (from 0 to 4, average 3.3). So most of the vehicles are with about 3 passengers which is pretty much well-loaded. We also see that lower Manhattan has higher numbers in general. Like my Task 2, there are 3 maps and 4 screenshots for this task since I did it with different treatments of the dataset. Descriptions, links, and pictures for the other two are in the Word doc I submitted through NYUClasses",
+				"authors": "Haopeng Huang",
+				"urls": ["https://haopeng-huang.carto.com/builder/0b89e68e-931c-4e6c-9225-bfa849a28054/embed"]
+			}
+
+
+		]
+	},
+	"6": {
+		"objective": "Are most vehicle moving or idling? In which part of the city that we see vehicle idling/moving more often? For example, are there any 'dead zone' where a vehicle just drops off passengers, and stay idling forever?",
+		"submissions": [{
+				"teaser": "task6_cb4221_uak211",
+				"description": "This visualization displays the rolling average of time vehicles spend idling before they pick up one or more passengers. Each line represents the rolling average idle time for vehicles operating in Uptown, Midtown, or Downtown Manhattan, using hues to differentiate. Uptown stops are those with latitude values greater than 40.7979, Downtown includes stops with latitude values of less than 40.7209, and Midtown incorporates the rest. This visualization is effective in showing overall idling time trends throughout the entire day as it features a line mark to show change in the quantitative value while allowing for comparison between different parts of Manhattan through the use of different hues and different positions. It also gives added detail through a tooltip.",
+				"authors": "Christine Biddlecombe, Ursula Kaczmarek",
+				"urls": ["https://ursulakaczmarek.github.io/accel.plotly/"]
+			},
+			{
+				"teaser": "task6_xc1454.jpg",
+				"description": "The 'Idling Vehicle Density' layer shows the overall density of the idling vehicle. The 'Idling Vehicle Count Per Hour' layer shows the hourly changes of idling vehicle. The 'Moving Vehicle Density' layer shows the overall density of the moving vehicle. The 'Moving Vehicle Count Per Hour' layer shows the hourly changes in the moving vehicle. The number of moving vehicles is double the number of idling vehicles. We could see that most of the moving or idling vehicle is located in downtown Manhattan(lower Manhattan and the bottom of central park).The more moving vehicles in the area, the more idling vehicles waiting there.There is no significant difference in the spatial distribution changes over time.",
+				"authors": "Xurui Chen",
+				"urls": ["https://sites.google.com/view/data-visualization-sherry/vehicle-status-analysis", "https://sites.google.com/view/data-visualization-sherry/home"]
+			},
+
+			{
+				"teaser": "task6_hl3282.png",
+				"description": " I created map consisting of points in each geometry based on unserved trips data using Carto. The size of points is decided by the number of trips in certain interaction ID area at certain hour. The larger the number of trips are, the larger the points are. Thus, temporal and spatial pattern can be seen in this map. when clicking the certain hour on the distribution in the right, the left point distribution would be changed according to time. From the time distribution in the right, the time after 1, very few unserved trips occur and during the rush hour, most unserved trips occur. And from spatial perspective, most unserved trips occur from 14th St to 57th St, which is expected. Especially at night, most unserved trips happen in downtown.",
+				"authors": "Hanxing Li",
+				"urls": ["https://hancylee525.carto.com/builder/8f37abd5-6d43-4ffb-8cee-15a0e1362f56/embe"]
+			},
+
+
+			{
+				"teaser": "task6_ak3940.png",
+				"description": "This visualization simulates the driving paths for ridesharing vehicles in Manhattan. Points colored gold represent positions at which the vehicle was moving, while those in cyan represent positions at which the vehicle was idle. When the visualization for one vehicle finishes, visualization for the next vehicle begins.",
+				"authors": "Adley Kim",
+				"urls": ["https://adleykim.github.io/datavizfinal/"]
+			},
+			{
+				"teaser": "task6_rms818_kyn227.JPG",
+				"description": "More Idle Vehicles observed towards the Upper and Eastern Sides of New York.",
+				"authors": "Kloe Ng and Rachel Sim",
+				"urls": ["https://mit.carto.com/u/angyuqian/builder/cdea1f8c-4893-4ab6-ba0a-2ed2568af24f/embed"]
+			},
+			{
+				"teaser": "task6_ mv1742_ys3226.gif",
+				"description": "For the sixth question, we calculated the speed of every vehicle. We used pandas to analyze each vehicle individually. To increase the speed of our algorithm, we took subsamples every 5 records. Distance divided by time yields the speed. The plot shows the speeds that are 4.5 standard deviations below the mean speed. This included not only vehicles with a speed of zero (not moving at all), but also we observe some vehicles with very low speed. This approach allows us to account for uncertainty errors in the system that was used to record the location. 4.5 standard deviations below the mean speed accounts for many cases where the vehicle might not be moving but the signal fluctuates slightly by a few meters causing the speed to be larger than zeros. We also provide a GIF to better visualize the temporal change per hour and the spatial change using the maps.",
+				"authors": "Manrique Vargas and Yavuz Sunor",
+				"urls": ["https://github.com/mv1742/Data_VIZ/blob/master/README.md#Q6",
+					"https://manriqvq.carto.com/builder/7da12f68-0d62-482a-88a2-446ba4c6903a/embed"
+				]
+			}
+		]
+	},
+
+	"7": {
+		"objective": "We want to understand the trends among vehicles in term distance travel, average number of passengers, the number of revenue trips (a pair of pickup/dropoff), the number of rebalance trips (stops with 0 passengers but positive duration), and idling time. How can you help us explore this trend?",
+		"submissions": [{
+				"teaser": "task7_rms818_kyn227.PNG",
+				"description": "Rebalance Count Trips and Number of Revenue Trips generally follow the same time series pattern.",
+				"authors": "Kloe Ng and Rachel Sim",
+				"urls": ["https://public.tableau.com/views/Task7_15645572352670/Dashboard2?:embed=y&:display_count=yes&publish=yes&:origin=viz_share_link"]
+			},
+
+			{
+				"teaser": "task7_sjf374.png",
+				"description": "In the Carto dashboard, a few different elements were combined to give the user an interactive experience. At first, the viewer will notice an animation of the paths of a random set of vehicles throughout the day. This can be seen on the map with the small red dots. Below the map, a user can select a specific hour or multiple to see what movement happened in that time in the map above. On the right,a few graphs give the opportunity for more exploration into distance traveled and passengers in a vehicle at points of pick up or drop off. In the distance traveled graph, sorted by the total distance traveled.Simply clicking on one of the vehicle ids will filter the view on the map to the left.This way, the trip of one vehicle can be seen. Also, searching for one of the many other vehicles in the sample set is also accessible with this chart. Below that is a distribution of passengers at point of pick up or drop off.The distribution gives a lot of insight. For example, there are a very small amount of instances where at a stop the number of passengers is zero.This means that the ride sharing is doing a good job of continually adding people to the car and rarely letting it sit empty once the rides have started. Another insight is that the cars seem to max out at 4 people often, which means maximum revenue. The way my data was cleaned to result in this dashboard can be seen in the python notebook attached here.",
+				"authors": "Sam Falk",
+				"urls": ["https://samjfalk.carto.com/builder/2b138425-dc4c-4141-b65b-bd10394ebcde/embed", "https://github.com/samjfalk/Ride_Sharing_Data_Viz/blob/master/sfalk_data_munging.ipynb"]
+			}
+		]
+
+
+	},
+	"8": {
+		"objective": "If we are to pick a particular vehicle ID, how can we effectively illustrate its activities throughout the day?",
+		"submissions": [
+
+			{
+				"teaser": "task8_sjf374.png",
+				"description": "In the Carto dashboard, a few different elements were combined to give the user an interactive experience. At first, the viewer will notice an animation of the paths of a random set of vehicles throughout the day. This can be seen on the map with the small red dots. Below the map, a user can select a specific hour or multiple to see what movement happened in that time in the map above.  On the right, a few graphs give the opportunity for more exploration into distance traveled and passengers in a vehicle at points of pick up or drop off.in the distance traveled graph, it is sorted by the total distance traveled.Simply clicking on one of the vehicle ids will filter the view on the map to the left.This way, the trip of one vehicle can be seen.Also, searching for one of the many other vehicles in the sample set is also accessible with this chart. Below that is a distribution of passengers at point of pick up or drop off.The distribution gives a lot of insight.For example, there are a very small amount of instances where at a stop the number of passengers is zero.This means that the ride sharing is doing a good job of continually adding people to the car and rarely letting it sit empty once the rides have started.Another insight is that the cars seem to max out at 4 people often, which means maximum revenue. The way my data was cleaned to result in this dashboard can be seen in the python notebook attached here.",
+				"authors": "Sam Falk",
+				"urls": ["https://samjfalk.carto.com/builder/2b138425-dc4c-4141-b65b-bd10394ebcde/embed", "https://github.com/samjfalk/Ride_Sharing_Data_Viz/blob/master/sfalk_data_munging.ipynb"]
+
+			},
+			{
+				"teaser": "task8_rms818_kyn227.JPG",
+				"description": "Vehicle 13 is mostly moving throughout the day with passengers except for timeframe from 11am to 2pm.",
+				"authors": "Kloe Ng and Rachel Sim",
+				"urls": ["https://nyu.carto.com/u/kyn227/builder/50511973-08b6-4239-b0f2-6f15ce8db7c0/embed"]
+			},
+
+			{
+				"teaser": "task8_hy1528.png",
+				"description": "For Task 3,4,8, I built animations of routes, speed and passengers to visualize the activities of a specific vehicle. It can also allow us to see what are the places  and time of overspeed and overload happen of each vehicle. Description of how to use the chart has been included in the link. ",
+				"authors": "Haoming Yang",
+				"urls": ["https://cuspcapstone2019.github.io/visual2/"]
+			},
+			{
+				"teaser": "task8_cb4221_uak211",
+				"description": "This visualization illustrates the activity of vehicle ID 24, which had the highest number of trips of all vehicles in the dataset. Each node in the graph represents a unique stop ID, and each edge represents a leg in a trip. Multiple trips between the same stop IDs are represented only once. Nodes are colored according to the part of Manhattan in which it took place. Uptown stops are those with latitude values greater than 40.7979, Downtown includes stops with latitude values of less than 40.7209, and Midtown incorporates the rest. This visualization effectively illustrates vehicle 24’s activities by showing connectivity between stops and using different hues to denote different parts of Manhattan. It also includes tooltip information to give added detail.",
+				"authors": "Christine Biddlecombe, Ursula Kaczmarek",
+				"urls": ["https://output.jsbin.com/wehosit"]
+			},
+			{
+				"teaser": "task8_cl4855.png",
+				"description": "Here I picked Vehicle ID 233 to look at. And through the color line features in folium package its routes can be shown in one day.  ",
+				"authors": "Chang Liu",
+				"urls": ["https://sites.google.com/view/numofpassengers/ "]
+			},
+			{
+				"teaser": "task8_nbc270.png",
+				"description": "In the third visualization above we see line plot over a street map (spatial) indidcating the route of Vehicle ID 269. This vehcile was chosen as it's route was fairly easy to understand and allowed for a heatmap to be applied to indidcate change in location over time (time). Blue indicates earlier in the day and red indidcates later in the day. Therefor This driver started in Inwood and ended in Fidi. Quite a trip!  ",
+				"authors": "Nathan Caplan",
+				"urls": ["https://nbc270.github.io/data_visualization_final/#Challenge_8 "]
+			},
+
+
+			{
+				"teaser": " task8_gw1054_wz1405.png",
+				"description": " Users are able to visualize the path of a simulated vehicle throughout different hours of a day. Taking Vehicle ID: 123 as an example, it traverses different streets and avenues throughout Manhattan in a day but barely travels north of 72th St. What’s more, the vehicle is active mainly in Midtown and Downtown between 10am and 12pm.",
+				"authors": "Guanjia Wang and Wenjie Zheng",
+				"urls": ["https://bl.ocks.org/Williamburgson/26549ac811863dc4bfa5c2d48ea3a675"]
+			},
+			{
+				"teaser": "task8_ak3940.png",
+				"description": "This visualization simulates the driving paths for ridesharing vehicles in Manhattan. Points colored gold represent positions at which the vehicle was moving, while those in cyan represent positions at which the vehicle was idle. When the visualization for one vehicle finishes, visualization for the next vehicle begins.",
+				"authors": "Adley Kim",
+				"urls": ["https://adleykim.github.io/datavizfinal/"]
+			},
+			{
+				"teaser": "task8_lj1230.png",
+				"description": "This animated map shows the activities of vehicle 224. There's some time during the typical day that its trace disappears, which means the vehicle is idling. For the moments it has traces, the faster the vehicle runs the more trips it takes. I do recommend directly go to my page (the second link) for better understanding of my map.",
+				"authors": "Junru Lu",
+				"urls": ["https://nyu.carto.com/u/junru/builder/19a93bd1-201b-4667-a585-9c6b4bf7cbc3/embed", "https://lujunru.github.io/webpage/DV_Final_lj1230.html"]
+			},
+			{
+				"teaser": "task8_tn1050_ri619.png",
+				"description": "To effectively illustrate a particular vehicle’s activities throughout the day would be to visualize it’s paths for each hour, the locations of all of it’s pickups and drop-offs and the average number of passengers the vehicle carried compared to the rest of the vehicles for that day. Further supplementary plots include the time series line plot to give a better view of our driver's behaviors.",
+				"authors": "Tanya Nabila and Rohun Iyer",
+				"urls": ["https://tanyani.github.io/DV_Final/#problem_8"]
+			},
+			{
+				"teaser": "task8_cd2682_mh5172.png",
+				"description": "Input the vehicle ID and the path of that vehicle in two days will be plotted. Select the data will limit the path in a single day.",
+				"authors": "Chang Du and Mingyi He",
+				"urls": ["https://chang-du.github.io/Data_Visualization_Final_Challenge/#team"]
+			},
+
+			{
+				"teaser": "task8_hl3282.png",
+				"description": "I created animated map according to pick up, drop off, rebalancing state based on vehicle 1 events and path data using Carto. And it is showing vehicle 1 path and activity (pick up, drop off, rebalancing) based on the time. It is clear that in the night, the activity is decreasing whatever pickup, drop off or rebalancing.  Its path mostly includes the downtown, midtown and only include uptown when it is deep night. And my map can show individual pickup path, drop-off path and rebalancing path.",
+				"authors": "Hanxing Li",
+				"urls": ["https://hancylee525.carto.com/builder/cfae3c3f-5f59-4e4d-98c3-af61cde5302e/embed"]
+			},
+			{
+				"teaser": "task8_ mv1742_ys3226.gif",
+				"description": "The most important information are the paths and the pickups and drop offs. This map allows us to visualize them all. Some points are also shown which are not close to the path trajectory of the vehicle. It might be possible that these points were failed requests. We also provide a GIF to better visualize the temporal change per hour and the spatial change using the maps.",
+				"authors": "Manrique Vargas and Yavuz Sunor",
+				"urls": ["https://github.com/mv1742/Data_VIZ/blob/master/README.md#Q8"]
+			}
+		]
+	}
 }
