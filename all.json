@@ -124,7 +124,7 @@
 				"authors": "Tingyu Chang",
 				"urls": ["https://bl.ocks.org/tingyuc3/raw/787a6f4882aa9860a5f475445692d40e/"]
 			}, {
-				"teaser": " task1_gw1054_wz1405.png",
+				"teaser": "task1_gw1054_wz1405.png",
 				"description": "The ‘Service Rate by Hour’ chart shows that the match-up rate stays high during the night time and early morning on this particular day of October 6th, 2013. As time progresses to the morning rush hour, the match-rate drops to 40%, suggesting that most of the requested services weren’t met with an available driver or an available vehicle. The night time beginning from the evening rush hour shows a similar trend as the morning rush hour does. The service rate remains low between 6 pm and 11 pm. There is a particular spike in at 4 pm in the afternoon, suggesting that additional ridesharing drivers hitting the road to meet the demand of evening rush hour. Yet, the supply isn’t enough and the service match up rate during the evening peak hour is quite low, while there is probably extra or sufficient supply during the late-night as most of the requests were met.",
 				"authors": "Guanjia Wang and Wenjie Zheng",
 				"urls": ["https://bl.ocks.org/Williamburgson/26549ac811863dc4bfa5c2d48ea3a675"]
