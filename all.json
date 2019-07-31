@@ -8,7 +8,7 @@
 				"urls": ["https://bl.ocks.org/karansaini282/2b37af53597733bbacf1ff52d2301e58"]
 			},
 			{
-				"teaser": "task1_2_jl9760.png",
+				"teaser": "Task1_2_jl9760.png",
 				"description": " This visualization can effectively solve the task one and two. On the right side, it is a bar chart that shows the serving rate per hour (Task 1). When users put the mouse over each bar, it shows the exact serving rate of that time. We can discover that the serving rate is particularly high during 2am to 6am and low during rush hours.",
 				"authors": "Jiawen Liang",
 				"urls": ["https://bl.ocks.org/a627142126/raw/7ebae9850e482b2ba88a14742fba9e7e/"]
@@ -44,7 +44,7 @@
 				"urls": ["https://bl.ocks.org/jasonwang1031/raw/c463840e7ac01e782a365c168b2502e2/"]
 			},
 			{
-				"teaser": "task1_cl4855.png",
+				"teaser": "task1_cl4855.jpg",
 				"description": "This visualization is through D3.js. And the serving rate can be observed throughout one day. And it seems that the serving rate is high during late night and it drops when it comes to morning then slightly rises at rush hour in the afternoon but then drops at night.  When you move over your mouse on it you can see how rates are different from each other in terms of different hours.",
 				"authors": "Chang Liu",
 				"urls": ["https://bl.ocks.org/AngelLau/raw/dd226881ab3aa845d382ccf216d541ae/ "]
@@ -63,7 +63,7 @@
 			},
 
 			{
-				"teaser:": "task1_pl1840_yy2908.png",
+				"teaser": "task1_pl1840_yy2908.png",
 				"description": "The result indicates that the general average serving rate is 45.15%. The hourly serving rate during midnight and early morning (2 am to 6 am) is extremely higher than the average serving; also the hourly serving rates during 8 pm to 11 pm are extremely lower than average.",
 				"authors": "Pengzi Li and Yaxuan Yin",
 				"urls": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
@@ -106,10 +106,10 @@
 			},
 
 			{
-				"Teaser": "task1_hl3282.png",
-				"Description": "I created line chart with JS Bin. One of two lines is yellow indicating the actual serving rate in every hour of the day. The other one, blue line is the overall serving rate. It is easy to compare actual serving rate in every hour of the day with the overall serving rate from the line chart. And mouse over the black dots connecting the yellow line, the actua serving rate of the hour will appear. During the night like after 1am, the serving rate is higher than the overall serving rate and during the rush hour, serving rate is lower than the overall serving rate. And the trend of serving rate is easy to know from the line chart based on time. When it comes to rush hour, serving rate will be decreasing and comes to non-peak hour, serving rate will be increasing.",
+				"teaser": "task1_hl3282.png",
+				"description": "I created line chart with JS Bin. One of two lines is yellow indicating the actual serving rate in every hour of the day. The other one, blue line is the overall serving rate. It is easy to compare actual serving rate in every hour of the day with the overall serving rate from the line chart. And mouse over the black dots connecting the yellow line, the actua serving rate of the hour will appear. During the night like after 1am, the serving rate is higher than the overall serving rate and during the rush hour, serving rate is lower than the overall serving rate. And the trend of serving rate is easy to know from the line chart based on time. When it comes to rush hour, serving rate will be decreasing and comes to non-peak hour, serving rate will be increasing.",
 				"authors": "Hanxing Li",
-				"Urls": ["https://bl.ocks.org/Hancylee525/db2ef92129a825914606c28280d825c3"]
+				"urls": ["https://bl.ocks.org/Hancylee525/db2ef92129a825914606c28280d825c3"]
 			},
 
 			{
@@ -212,7 +212,7 @@
 				"urls": ["https://nyu.carto.com/u/kyn227/builder/58f3fd41-a69a-4be4-9a72-3234b40a9a7a/embed"]
 			},
 			{
-				"teaser": "task1_2_jl9760.png",
+				"teaser": "Task1_2_jl9760.png",
 				"description": " This visualization can effectively solve the task one and two. On the left side, it is an interactive map that shows the spatial and temporal pattern of not-served trips (Task 2). When users put mouse over each bar on the left, the map shows the spatial pattern of that time, the darker the color is, the more not-served trips that area has. We can discover that start from 9am to 11pm, the mid-town area has the most not-served trips.",
 				"authors": "Jiawen Liang",
 				"urls": ["https://bl.ocks.org/a627142126/raw/7ebae9850e482b2ba88a14742fba9e7e/"]
@@ -298,7 +298,7 @@
 			{
 				"teaser": "task2_pl1840_yy2908.png",
 				"description": "The result we got suggests that no-serving rates are relatively higher at night (from 7 pm to 12 am), and relatively lower during midnight and early morning (2 am to 6 am). The pattern is opposite to the hourly trend of serving rate. In spatial analysis, Both serving and no-serving trips are first normalized to (0,1) scale, then no-serving trips are subtracted from serving trips. Therefore, the real pattern of no-serving trips across Manhattan indicates that most of the no-serving trips occur in midtown.",
-				"authors:": "Pengzi Li and Yaxuan Yin",
+				"authors": "Pengzi Li and Yaxuan Yin",
 				"urls": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
 			},
 			{
@@ -319,7 +319,7 @@
 				"teaser": "task2_yc3420_jc9033.png",
 				"description": "Not served trips are filtered by a user-defined hourly interval. And then time-series lines of served & not served trip rate clearly shows the number of trips that cannot be served through time in a day. Morning rush hour has more not - served trips while evening rush hour has less not - served trips.The late evening has the most not - served trips while the night has the least not - served trips.Obviously, this pattern is exactly contrary to that of serving rate.In other words, the more not - served trips, the higher serving rate.This is because there is a large absolute amount of trips. In addition, a not - served trips map by intersection was drawn to show the spatial distribution that allows users to find what places within what time interval have more / less not - served trips. All the figures are built with HTML, CSS, Javascript, and D3.",
 				"authors": "Yunhe Cui and Junjie Cai",
-				"Urls": ["https://jsbin.com/yuvezox/"]
+				"urls": ["https://jsbin.com/yuvezox/"]
 
 			},
 
@@ -401,10 +401,7 @@
 				"description": "There is a large number of erroneous data. Vehicles that have 5 or 6 passengers only occur between 5am and 12pm.",
 				"authors": "Kloe Ng and Rachel Sim",
 				"urls": ["https://nyu.carto.com/u/rms818/builder/cefe1e4e-e158-4d59-9b8d-3ada534b4fec/embed"]
-			},
-			{
-
-				"submissions": [{
+			},{
 						"teaser": "task4_cb4221_uak211.png",
 						"description": "This visualization examines the top 1000 locations by requested pickup and dropoff where cars are violating the four passenger rule. Each dot represents a pickup and dropoff location. The color represents the amount of cars that violated the limit at that location; the darker the color, the higher amount of cars violating the limit. Users can select each dot to see the latitude, longitude, and number of cars. Users can also use the toggle on the upper right to look at specific bins of cars; for example, if users select the highest count bin, they can visualize the locations that were the 'worst offenders' of the four passenger limit.",
 						"authors": "Christine Biddlecombe and Ursula Kaczmarek",
@@ -454,10 +451,7 @@
 						"description": "As we moving the time bar, we'll see some amazing conclusions. Starting with only 8% in Oct 5th 1AM, the rate keeps growing all day from around 85% in the morning rush hour then to even 100% over the night (7PM - 12AM)... I do recommend directly go to my page (the second link) for better understanding of my map.",
 						"authors": "Junru Lu",
 						"urls": ["https://nyu.carto.com/u/junru/builder/0176f1d2-c7b7-4a71-982c-b36427c61f4e/embed", "https://lujunru.github.io/webpage/DV_Final_lj1230.html"]
-					}
-
-				]
-			},
+					},
 
 			{
 				"teaser": "task4_pl1840_yy2908.png",
