@@ -401,10 +401,7 @@
 				"description": "There is a large number of erroneous data. Vehicles that have 5 or 6 passengers only occur between 5am and 12pm.",
 				"authors": "Kloe Ng and Rachel Sim",
 				"urls": ["https://nyu.carto.com/u/rms818/builder/cefe1e4e-e158-4d59-9b8d-3ada534b4fec/embed"]
-			},
-			{
-
-				"submissions": [{
+			},{
 						"teaser": "task4_cb4221_uak211.png",
 						"description": "This visualization examines the top 1000 locations by requested pickup and dropoff where cars are violating the four passenger rule. Each dot represents a pickup and dropoff location. The color represents the amount of cars that violated the limit at that location; the darker the color, the higher amount of cars violating the limit. Users can select each dot to see the latitude, longitude, and number of cars. Users can also use the toggle on the upper right to look at specific bins of cars; for example, if users select the highest count bin, they can visualize the locations that were the 'worst offenders' of the four passenger limit.",
 						"authors": "Christine Biddlecombe and Ursula Kaczmarek",
@@ -454,10 +451,7 @@
 						"description": "As we moving the time bar, we'll see some amazing conclusions. Starting with only 8% in Oct 5th 1AM, the rate keeps growing all day from around 85% in the morning rush hour then to even 100% over the night (7PM - 12AM)... I do recommend directly go to my page (the second link) for better understanding of my map.",
 						"authors": "Junru Lu",
 						"urls": ["https://nyu.carto.com/u/junru/builder/0176f1d2-c7b7-4a71-982c-b36427c61f4e/embed", "https://lujunru.github.io/webpage/DV_Final_lj1230.html"]
-					}
-
-				]
-			},
+					},
 
 			{
 				"teaser": "task4_pl1840_yy2908.png",
