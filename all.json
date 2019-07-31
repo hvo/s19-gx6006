@@ -532,17 +532,17 @@
 			},
 
 			{
-				"Teaser": "task5_skp454.gif",
+				"teaser": "task5_skp454.gif",
 				"description": " The above plot shows the stacked bar chart for percentage vehicle time it is occupied by different number of passengers.The plot contains bars for all the vehicles present in the dataset and is arranged to present information neatly.The blue line shows the mean of % time vehicles are occupied with 4 passenger.The plot clearly reflects that the distribution of high number of passengers(4) is homogenous across vehicles.For most of the vehicles the % time occupied by 4 passengers is close to the mean, overall there is a very small standard deviation.However, there are certain vehicles which are mostly occupied by less number of passengers.To better understand the spatial temporal distribution of these cabs we plot the next map which is shown below.The above map shows the positions of vehicles at different time of the day, and the color reflects the number of passengers they are carrying.It can be clearly observed from the map that in certain hours of the day i.e., from 12 AM to 4 AM, the number of cabs carrying high number of passengers is low across all regions.In certain regions like upper Manhattan, most of the vehicles have low passengers throughout the day.We can clearly observe that most of the vehicles in lower and midtown Manhattan have high number of passengers.Also vehicles with high number of passengers peak during the rush hours.",
 				"authors": "Shivam Kumar Pathak",
-				"url": ["https://github.com/Shivam0712/DataVisualization/blob/master/Q51.png", "https://github.com/Shivam0712/DataVisualization/blob/master/Q5.gif"]
+				"urls": ["https://github.com/Shivam0712/DataVisualization/blob/master/Q51.png", "https://github.com/Shivam0712/DataVisualization/blob/master/Q5.gif"]
 			},
 
 			{
 				"teaser": "task5_pl1840_yy2908.png",
 				"description": "After digging into the data, analysis proves that most of the vehicles are riding with 3 passengers. Also, 323 vehicles tend to ride with more passengers (most of their trips have 4 passengers in the car),  they are active at most times of the day, which is consistent with violated vehicles on spatial distribution. ",
 				"authors": "Pengzi Li, Yaxuan Yin",
-				"url": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
+				"urls": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
 			},
 
 			{
