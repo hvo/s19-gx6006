@@ -1,0 +1,39 @@
+{
+  "1": {
+    "objective": "What is the serving rate for each scenario throughout the day, comparing to the overall serving rate? Serving rate is the number of successfully matched trip in a period of time. For example, is the serving rate higher during rush hour or at night?",
+    "submissions": [
+      {
+        "teaser": "task1_ks5063_pya209.png",
+        "description": "The visualization shows the serving rate by the hour of the day. The red vertical line shows the overall average serving rate. We can observe that the serving rate is generally high late at night / early morning, starting from about 1 AM and starts dropping around 7 AM. The lowest serving rates are around the morning and evening rush hours (presumably start and end of a work day).",
+        "authors": "Karan Saini and Pranay Anchan",
+        "urls": ["https://bl.ocks.org/karansaini282/2b37af53597733bbacf1ff52d2301e58"]
+      }
+    ]
+  },
+  "2": {
+    "objective": "For those trips that could not be served, do they follow a spatial or temporal pattern? For example, are most of those trips originated in particular regions, and of certain times?",
+    "submissions": [
+      {
+        "teaser": "task2_ks5063_pya209.png",
+        "description": "The visualization shows the number of service refusals for the selected hour of the day, for all the intersections in Manhattan. It has 5 gradients of blue, the darker showing more service refusals. Logically, time-wise this visualization would be inversely proportional to the first visualization (high serving rate = low number of service refusals). For most of the daywe see the refusals spread from Lower Manhattan all the way till Upper East and Upper West sides. From 1 AM to 6 AM, it seems to be concentrated around Chelsea.",
+        "authors": "Karan Saini and Pranay Anchan",
+        "urls": ["https://bl.ocks.org/karansaini282/b18124e3dae603593669e87baadc7ce0",
+                 "https://github.com/karansaini282/data_vis/blob/master/Task_5.ipynb",
+                 "https://bl.ocks.org/karansaini282/19078b17c9a804623dc2994c4c458101"]
+      }
+    ]
+  },
+  "5": {
+    "objective": "What can we learn about the vehicle utilization? Are most of them empty, or with 1, 2, 3 or 4 passengers? Are there particular vehicles that tend to ride with more passengers than others? If so, how are they distributed in space and time.",
+    "submissions": [
+      {
+        "teaser": "task5_ks5063_pya209.png",
+        "description": "The first visualization shows a histogram of the total number of trips, aggregated by the number of passengers. We can see most trips have 4 passengers, followed by 3, 2, 1 and 0 passengers.<br/><br/>The second visualization consists of two steps:<ul><li>The first step (done in Python) is a histogram of the average number of passengers per vehicle to identify if any particular vehicles ride with more passengers compared to other vehicles. With this plot we can see that many vehicles have an average number of passengers above 3.</li><li>The second step is a spatio-temporal visualization of the number of passengers for vehicles having a greater average number of passengers (we have chosen 3.5 and above). The spatial unit is intersections in Manhattan; the temporal unit is the hour of the day. From the visualization, we can see that other than early morning hours, these vehicles have many passengers throughout all of Manhattan.</li></ul>",
+        "authors": "Karan Saini and Pranay Anchan",
+        "urls": ["https://bl.ocks.org/karansaini282/b18124e3dae603593669e87baadc7ce0",
+                 "https://github.com/karansaini282/data_vis/blob/master/Task_5.ipynb",
+                 "https://bl.ocks.org/karansaini282/19078b17c9a804623dc2994c4c458101"]
+      }
+    ]
+  }
+}
