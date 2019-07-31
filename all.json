@@ -298,7 +298,7 @@
 			{
 				"teaser": "task2_pl1840_yy2908.png",
 				"description": "The result we got suggests that no-serving rates are relatively higher at night (from 7 pm to 12 am), and relatively lower during midnight and early morning (2 am to 6 am). The pattern is opposite to the hourly trend of serving rate. In spatial analysis, Both serving and no-serving trips are first normalized to (0,1) scale, then no-serving trips are subtracted from serving trips. Therefore, the real pattern of no-serving trips across Manhattan indicates that most of the no-serving trips occur in midtown.",
-				"authors:": "Pengzi Li and Yaxuan Yin",
+				"authors": "Pengzi Li and Yaxuan Yin",
 				"urls": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
 			},
 			{
