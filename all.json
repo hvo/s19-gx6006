@@ -44,7 +44,7 @@
 				"urls": ["https://bl.ocks.org/jasonwang1031/raw/c463840e7ac01e782a365c168b2502e2/"]
 			},
 			{
-				"teaser": "task1_cl4855.png",
+				"teaser": "task1_cl4855.jpg",
 				"description": "This visualization is through D3.js. And the serving rate can be observed throughout one day. And it seems that the serving rate is high during late night and it drops when it comes to morning then slightly rises at rush hour in the afternoon but then drops at night.  When you move over your mouse on it you can see how rates are different from each other in terms of different hours.",
 				"authors": "Chang Liu",
 				"urls": ["https://bl.ocks.org/AngelLau/raw/dd226881ab3aa845d382ccf216d541ae/ "]
@@ -63,7 +63,7 @@
 			},
 
 			{
-				"teaser:": "task1_pl1840_yy2908.png",
+				"teaser": "task1_pl1840_yy2908.png",
 				"description": "The result indicates that the general average serving rate is 45.15%. The hourly serving rate during midnight and early morning (2 am to 6 am) is extremely higher than the average serving; also the hourly serving rates during 8 pm to 11 pm are extremely lower than average.",
 				"authors": "Pengzi Li and Yaxuan Yin",
 				"urls": ["https://bl.ocks.org/estellaleee/289696ac777bd71b5b362ffc6d8f6f31"]
@@ -106,10 +106,10 @@
 			},
 
 			{
-				"Teaser": "task1_hl3282.png",
-				"Description": "I created line chart with JS Bin. One of two lines is yellow indicating the actual serving rate in every hour of the day. The other one, blue line is the overall serving rate. It is easy to compare actual serving rate in every hour of the day with the overall serving rate from the line chart. And mouse over the black dots connecting the yellow line, the actua serving rate of the hour will appear. During the night like after 1am, the serving rate is higher than the overall serving rate and during the rush hour, serving rate is lower than the overall serving rate. And the trend of serving rate is easy to know from the line chart based on time. When it comes to rush hour, serving rate will be decreasing and comes to non-peak hour, serving rate will be increasing.",
+				"teaser": "task1_hl3282.png",
+				"description": "I created line chart with JS Bin. One of two lines is yellow indicating the actual serving rate in every hour of the day. The other one, blue line is the overall serving rate. It is easy to compare actual serving rate in every hour of the day with the overall serving rate from the line chart. And mouse over the black dots connecting the yellow line, the actua serving rate of the hour will appear. During the night like after 1am, the serving rate is higher than the overall serving rate and during the rush hour, serving rate is lower than the overall serving rate. And the trend of serving rate is easy to know from the line chart based on time. When it comes to rush hour, serving rate will be decreasing and comes to non-peak hour, serving rate will be increasing.",
 				"authors": "Hanxing Li",
-				"Urls": ["https://bl.ocks.org/Hancylee525/db2ef92129a825914606c28280d825c3"]
+				"urls": ["https://bl.ocks.org/Hancylee525/db2ef92129a825914606c28280d825c3"]
 			},
 
 			{
@@ -212,7 +212,7 @@
 				"urls": ["https://nyu.carto.com/u/kyn227/builder/58f3fd41-a69a-4be4-9a72-3234b40a9a7a/embed"]
 			},
 			{
-				"teaser": "task1_2_jl9760.png",
+				"teaser": "Task1_2_jl9760.png",
 				"description": " This visualization can effectively solve the task one and two. On the left side, it is an interactive map that shows the spatial and temporal pattern of not-served trips (Task 2). When users put mouse over each bar on the left, the map shows the spatial pattern of that time, the darker the color is, the more not-served trips that area has. We can discover that start from 9am to 11pm, the mid-town area has the most not-served trips.",
 				"authors": "Jiawen Liang",
 				"urls": ["https://bl.ocks.org/a627142126/raw/7ebae9850e482b2ba88a14742fba9e7e/"]
