@@ -8,7 +8,7 @@
 				"urls": ["https://bl.ocks.org/karansaini282/2b37af53597733bbacf1ff52d2301e58"]
 			},
 			{
-				"teaser": "task1_2_jl9760.png",
+				"teaser": "Task1_2_jl9760.png",
 				"description": " This visualization can effectively solve the task one and two. On the right side, it is a bar chart that shows the serving rate per hour (Task 1). When users put the mouse over each bar, it shows the exact serving rate of that time. We can discover that the serving rate is particularly high during 2am to 6am and low during rush hours.",
 				"authors": "Jiawen Liang",
 				"urls": ["https://bl.ocks.org/a627142126/raw/7ebae9850e482b2ba88a14742fba9e7e/"]
