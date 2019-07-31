@@ -574,7 +574,7 @@
 	"6": {
 		"objective": "Are most vehicle moving or idling? In which part of the city that we see vehicle idling/moving more often? For example, are there any 'dead zone' where a vehicle just drops off passengers, and stay idling forever?",
 		"submissions": [{
-				"teaser": "task6_cb4221_uak211",
+				"teaser": "task6_cb4221_uak211.png",
 				"description": "This visualization displays the rolling average of time vehicles spend idling before they pick up one or more passengers. Each line represents the rolling average idle time for vehicles operating in Uptown, Midtown, or Downtown Manhattan, using hues to differentiate. Uptown stops are those with latitude values greater than 40.7979, Downtown includes stops with latitude values of less than 40.7209, and Midtown incorporates the rest. This visualization is effective in showing overall idling time trends throughout the entire day as it features a line mark to show change in the quantitative value while allowing for comparison between different parts of Manhattan through the use of different hues and different positions. It also gives added detail through a tooltip.",
 				"authors": "Christine Biddlecombe, Ursula Kaczmarek",
 				"urls": ["https://ursulakaczmarek.github.io/accel.plotly/"]
@@ -661,13 +661,13 @@
 				"urls": ["https://cuspcapstone2019.github.io/visual2/"]
 			},
 			{
-				"teaser": "task8_cb4221_uak211",
+				"teaser": "task8_cb4221_uak211.png",
 				"description": "This visualization illustrates the activity of vehicle ID 24, which had the highest number of trips of all vehicles in the dataset. Each node in the graph represents a unique stop ID, and each edge represents a leg in a trip. Multiple trips between the same stop IDs are represented only once. Nodes are colored according to the part of Manhattan in which it took place. Uptown stops are those with latitude values greater than 40.7979, Downtown includes stops with latitude values of less than 40.7209, and Midtown incorporates the rest. This visualization effectively illustrates vehicle 24’s activities by showing connectivity between stops and using different hues to denote different parts of Manhattan. It also includes tooltip information to give added detail.",
 				"authors": "Christine Biddlecombe, Ursula Kaczmarek",
 				"urls": ["https://output.jsbin.com/wehosit"]
 			},
 			{
-				"teaser": "task8_cl4855.png",
+				"teaser": "task8_cl4855.jpg",
 				"description": "Here I picked Vehicle ID 233 to look at. And through the color line features in folium package its routes can be shown in one day.  ",
 				"authors": "Chang Liu",
 				"urls": ["https://sites.google.com/view/numofpassengers/ "]
@@ -681,7 +681,7 @@
 
 
 			{
-				"teaser": " task8_gw1054_wz1405.png",
+				"teaser": "task8_gw1054_wz1405.png",
 				"description": " Users are able to visualize the path of a simulated vehicle throughout different hours of a day. Taking Vehicle ID: 123 as an example, it traverses different streets and avenues throughout Manhattan in a day but barely travels north of 72th St. What’s more, the vehicle is active mainly in Midtown and Downtown between 10am and 12pm.",
 				"authors": "Guanjia Wang and Wenjie Zheng",
 				"urls": ["https://bl.ocks.org/Williamburgson/26549ac811863dc4bfa5c2d48ea3a675"]
