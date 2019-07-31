@@ -189,7 +189,7 @@
 			},
 
 			{
-				"teaser": "task2_cl4855.png",
+				"teaser": "task2_cl4855.jpg",
 				"description": "This graph is rendered through d3.js by filtering out all the pickup id equals to -1. Since most of the rides happened in lower manhattan so we can see there were more not served trips in those areas. But in the numbers of not served trips increased at upper Manhattan in late night.",
 				"authors": "Chang Liu",
 				"urls": ["http://bl.ocks.org/AngelLau/raw/07d2d55415351e96e963735830dd5b0b/ "]
@@ -418,7 +418,7 @@
 						"urls": ["https://sites.google.com/view/data-visualization-sherry/violating-vehicle-capacity", "https://sites.google.com/view/data-visualization-sherry/home"]
 					},
 					{
-						"teaser": "task4_cl4855.png",
+						"teaser": "task4_cl4855.jpg",
 						"description": "This graph is rendered by d3.js by filtering out the number of passengers which is over Most of the violations happened in lower Manhattan. And same trend of rising in upper Manhattan in the late night. ",
 						"authors": "Chang Liu",
 						"urls": ["http://bl.ocks.org/AngelLau/raw/07d2d55415351e96e963735830dd5b0b/ "]
@@ -490,7 +490,7 @@
 				"urls": ["https://public.tableau.com/profile/rachel2393#!/vizhome/Task5Complete/Dashboard1"]
 			},
 			{
-				"teaser": "task5_cl4855.png",
+				"teaser": "task5_cl4855.jpg",
 				"description": "This is the heatmap changed automatically by hours. Which was rendered in folium package. And we can see the utilization is actually quite high throughout Manhattan. ",
 				"authors": "Chang Liu",
 				"urls": ["https://sites.google.com/view/numofpassengers/ "]
