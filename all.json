@@ -319,7 +319,7 @@
 				"teaser": "task2_yc3420_jc9033.png",
 				"description": "Not served trips are filtered by a user-defined hourly interval. And then time-series lines of served & not served trip rate clearly shows the number of trips that cannot be served through time in a day. Morning rush hour has more not - served trips while evening rush hour has less not - served trips.The late evening has the most not - served trips while the night has the least not - served trips.Obviously, this pattern is exactly contrary to that of serving rate.In other words, the more not - served trips, the higher serving rate.This is because there is a large absolute amount of trips. In addition, a not - served trips map by intersection was drawn to show the spatial distribution that allows users to find what places within what time interval have more / less not - served trips. All the figures are built with HTML, CSS, Javascript, and D3.",
 				"authors": "Yunhe Cui and Junjie Cai",
-				"Urls": ["https://jsbin.com/yuvezox/"]
+				"urls": ["https://jsbin.com/yuvezox/"]
 
 			},
 
